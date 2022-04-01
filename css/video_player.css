@@ -1,0 +1,34 @@
+.video_player {
+    width: 100%;
+    height: 100%;
+    background-color: #00000054;
+    position: fixed;
+    z-index: 500;
+    backdrop-filter: blur(15px);
+
+    top: 0px;
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex-direction: column;
+}
+
+.video_player iframe {
+    width: 90%;
+    height: 80%;
+}
+
+.video_player .exit_player svg {
+    transition: 250ms ease-in-out;
+}
+
+.video_player .exit_player svg:hover {
+    transform: scale(130%, 130%);
+}
+
+.video_player .exit_player svg:active {
+    transition: 80ms ease-in-out;
+    transform: scale(150%, 150%);
+}

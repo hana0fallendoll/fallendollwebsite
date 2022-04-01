@@ -1,0 +1,97 @@
+section#fallendoll .page_content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section#fallendoll .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 900px;
+    height: 600px;
+
+    flex-direction: column;
+}
+
+section#fallendoll .title .logo_container {
+    margin-right: 60px;
+}
+
+section#fallendoll .buttons_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 40px;
+}
+
+section#fallendoll .buttons_container .button {
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 20px 30px 20px 30px;
+    gap: 16px;
+
+    user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -ms-touch-select: none;
+
+    -webkit-transition: transform 250ms 0s ease-in-out;
+    -moz-transition: transform 250ms 0s ease-in-out;
+    -o-transition: transform 250ms 0s ease-in-out;
+    transition: transform 250ms 0s ease-in-out;
+}
+
+section#fallendoll .buttons_container .button:hover {
+    transform: scale(110%);
+}
+
+section#fallendoll .buttons_container .button:active {
+    -webkit-transition: transform 70ms 0s ease-in-out;
+    -moz-transition: transform 70ms 0s ease-in-out;
+    -o-transition: transform 70ms 0s ease-in-out;
+    transition: transform 70ms 0s ease-in-out;
+
+    transform: scale(120%);
+}
+
+section#fallendoll .buttons_container .button .text {
+    font-family: "Exo Regular";
+    font-size: 24px;
+}
+
+section#fallendoll .buttons_container .button .image {
+    width: 30px;
+    height: 30px;
+}
+
+section#fallendoll .buttons_container .button .link_preview {
+    position: absolute;
+    opacity: 0;
+
+    -webkit-transition: transform 250ms 0s ease-in-out;
+    -moz-transition: transform 250ms 0s ease-in-out;
+    -o-transition: transform 250ms 0s ease-in-out;
+    transition: transform 250ms 0s ease-in-out;
+
+    color: #FFFFFF;
+
+    z-index: 200;
+
+    font-family: "Exo Regular";
+    font-size: 18px;
+
+    transform: translateY(25px);
+}
+
+section#fallendoll .buttons_container .button:hover .link_preview {
+    transform: translateY(55px);
+    opacity: 1;
+}
