@@ -1,0 +1,174 @@
+section .page_content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section .page_content .context_container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 10vw 0px 10vw;
+}
+
+section .page_content .context_container .text_container_wrapper.bottom_right {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: left;
+    align-items: flex-end;
+}
+
+section .page_content .context_container .text_container_wrapper {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: left;
+    align-items: flex-end;
+}
+
+section .page_content .context_container .text_container_wrapper.bottom_right .text_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    z-index: 600;
+    color: white;
+    margin: 0px 0px 20vh 10vw;
+    gap: 35px;
+}
+
+section .page_content .context_container .text_container_wrapper.right {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+section .page_content .context_container .text_container_wrapper.right .text_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    z-index: 600;
+    color: white;
+    margin: 0px 0px 0vh 10vw;
+    gap: 35px;
+}
+
+
+section .page_content .context_container .text_container_wrapper .text_container .info_text {   
+    font-family: 'Exo Regular';
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 17px;
+    letter-spacing: 0.25em;
+    margin: 0px;
+    padding: 0px;
+}
+
+section .page_content .context_container .text_container_wrapper .text_container .heading {
+    font-family: 'Montserrat Black';
+    font-weight: 900;
+    font-size: 96px;
+    line-height: 70px;
+    margin: 0px;
+    padding: 0px;
+    letter-spacing: -0.05em;
+}
+
+section .page_content .context_container .text_container_wrapper .text_container .compact_header_and_paragraph {
+    display: flex;
+    flex-direction: row;
+    margin: 0px;
+    padding: 0px;
+}
+
+section .page_content .context_container .text_container_wrapper .text_container .compact_header_and_paragraph .text_seperator {
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    padding: 0px;
+    gap: 6px;
+}
+
+section .page_content .context_container .text_container_wrapper .text_container .compact_header_and_paragraph .header {
+    font-family: "Montserrat Black";
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0px;
+    padding: 0px;
+}
+
+section .page_content .context_container .text_container_wrapper .text_container .compact_header_and_paragraph .paragraph {
+    font-family: "Exo Regular";
+    font-size: 14px;
+    line-height: 16px;
+}
+
+section .page_content .context_container  .text_container_wrapper .text_container .button {
+    background-color: #ffffff00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+    overflow: hidden;
+
+    width: 250px;
+    height: 48px;
+    position: relative;
+
+    user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -ms-touch-select: none;
+
+    -webkit-transition: all 150ms 0s ease-in-out;
+    -moz-transition: all 150ms 0s ease-in-out;
+    -o-transition: all 150ms 0s ease-in-out;
+    transition: all 150ms 0s ease-in-out;
+
+    clip-path: polygon(0 0, 94% 0, 100% 26%, 100% 100%, 6% 100%, 0% 76%);
+    color: #FFFFFF;
+
+    border: 0px solid #FFFFFF;
+    box-sizing: border-box;
+
+    box-shadow: inset 0px 0px 0px 2px #ffffff;
+
+    font-family: "Exo Black";
+
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.15em;
+}
+
+section .page_content .context_container .text_container_wrapper .text_container .button:hover {
+    background-color: #ffffff;
+    border: 2px solid #ffffff;
+    box-sizing: border-box;
+
+    box-shadow: inset 0px 0px 0px 2px #000000;
+    color: #000000;
+}
+
+section .page_content .context_container .text_container_wrapper .text_container .button:active {
+    -webkit-transition: all 50ms 0s ease-in-out;
+    -moz-transition: all 50ms 0s ease-in-out;
+    -o-transition: all 50ms 0s ease-in-out;
+    transition: all 50ms 0s ease-in-out;
+
+    background-color: #ffffff;
+    border: 0px solid #000000;
+    box-sizing: border-box;
+
+    box-shadow: inset 0px 0px 0px 2px #ffffff;
+    color: #000000;
+}

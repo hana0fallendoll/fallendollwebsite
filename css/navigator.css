@@ -9,6 +9,11 @@
     z-index: 200;
 
     top: 0px;
+
+    -webkit-transition: all 350ms 0s ease-in-out;
+    -moz-transition: all 350ms 0s ease-in-out;
+    -o-transition: all 350ms 0s ease-in-out;
+    transition: all 350ms 0s ease-in-out;
 }
 
 /* Grouping all Navigator components */
@@ -58,5 +63,9 @@
 
 .navigator .navigator_contents .hyperlinks_container a.active {
     font-family: "Exo Bold";
-    color: #5CBBFF;
+    color: #ffffff;
+}
+
+.navigator.dark {
+    background-color: black;
 }

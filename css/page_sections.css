@@ -3,10 +3,6 @@
     height: 100vh;
 
     scroll-snap-align: start;
-
-    -webkit-box-shadow: inset 0px 90px 0px 10px rgb(0, 0, 0);
-    -moz-box-shadow: inset 0px 90px 0px 10px rgb(0, 0, 0);
-    box-shadow: inset 0px 0px 90px 10px rgb(0, 0, 0);
 }
 
 .page_content {
@@ -41,6 +37,21 @@
     -moz-transition: opacity 2.5s 0s ease-in-out;
     -o-transition: opacity 2.5s 0s ease-in-out;
     transition: opacity 2.5s 0s ease-in-out;
+}
+
+.page_content .drop_shadow {
+    pointer-events: none;
+
+    width: 100vw;
+    height: 40vh;
+    position: absolute;
+    bottom: 0px;
+
+    opacity: 1;
+
+    z-index: -1;
+
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 100%, #000000 100%);
 }
 
 .page_content.blur {

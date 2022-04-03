@@ -27,16 +27,17 @@ section#fallendoll .buttons_container {
 }
 
 section#fallendoll .buttons_container .button {
-    background-color: #FFFFFF;
-    border-radius: 5px;
+    background-color: #ffffff00;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    padding: 20px 30px 20px 30px;
-    gap: 16px;
+    gap: 10px;
+    overflow: hidden;
 
-    width: 180px;
+    width: 375px;
+    height: 72px;
+    position: relative;
 
     user-select: none;
     -webkit-user-drag: none;
@@ -45,55 +46,45 @@ section#fallendoll .buttons_container .button {
     -ms-user-select: none;
     -ms-touch-select: none;
 
-    -webkit-transition: all 250ms 0s ease-in-out;
-    -moz-transition: all 250ms 0s ease-in-out;
-    -o-transition: all 250ms 0s ease-in-out;
-    transition: all 250ms 0s ease-in-out;
+    -webkit-transition: all 150ms 0s ease-in-out;
+    -moz-transition: all 150ms 0s ease-in-out;
+    -o-transition: all 150ms 0s ease-in-out;
+    transition: all 150ms 0s ease-in-out;
+
+    clip-path: polygon(0 0, 94% 0, 100% 26%, 100% 100%, 6% 100%, 0% 76%);
+    color: #FFFFFF;
+
+    border: 0px solid #FFFFFF;
+    box-sizing: border-box;
+
+    box-shadow: inset 0px 0px 0px 4px #ffffff;
 }
 
 section#fallendoll .buttons_container .button:hover {
-    transform: scale(110%);
+    background-color: #ffffff;
+    border: 4px solid #ffffff;
+    box-sizing: border-box;
+
+    box-shadow: inset 0px 0px 0px 5px #000000;
+    color: #000000;
 }
 
 section#fallendoll .buttons_container .button:active {
-    -webkit-transition: all 70ms 0s ease-in-out;
-    -moz-transition: all 70ms 0s ease-in-out;
-    -o-transition: all 70ms 0s ease-in-out;
-    transition: all 70ms 0s ease-in-out;
+    -webkit-transition: all 50ms 0s ease-in-out;
+    -moz-transition: all 50ms 0s ease-in-out;
+    -o-transition: all 50ms 0s ease-in-out;
+    transition: all 50ms 0s ease-in-out;
 
-    transform: scale(120%);
+    background-color: #ffffff;
+    border: 0px solid #000000;
+    box-sizing: border-box;
+
+    box-shadow: inset 0px 0px 0px 5px #ffffff;
+    color: #000000;
 }
 
 section#fallendoll .buttons_container .button .text {
-    font-family: "Exo Regular";
-    font-size: 24px;
-}
-
-section#fallendoll .buttons_container .button .image {
-    width: 30px;
-    height: 30px;
-}
-
-section#fallendoll .buttons_container .button .link_preview {
-    position: absolute;
-    opacity: 0;
-
-    -webkit-transition: transform 250ms 0s ease-in-out;
-    -moz-transition: transform 250ms 0s ease-in-out;
-    -o-transition: transform 250ms 0s ease-in-out;
-    transition: transform 250ms 0s ease-in-out;
-
-    color: #FFFFFF;
-
-    z-index: 200;
-
-    font-family: "Exo Regular";
+    font-family: "Exo Black";
     font-size: 18px;
-
-    transform: translateY(25px);
-}
-
-section#fallendoll .buttons_container .button:hover .link_preview {
-    transform: translateY(55px);
-    opacity: 1;
+    letter-spacing: 0.15em;
 }

@@ -67,3 +67,18 @@ html, body {
     font-family: "Exo Bold";
     src: url("fonts/Exo-Bold.ttf");
 }
+
+@font-face {
+    font-family: "Exo Black";
+    src: url("fonts/Exo-Black.ttf");
+}
+
+@font-face {
+    font-family: "Montserrat Black";
+    src: url("fonts/Montserrat-Black.ttf");
+}
+
+@font-face {
+    font-family: "Montserrat Extra Light";
+    src: url("fonts/Montserrat-ExtraLight.ttf");
+}

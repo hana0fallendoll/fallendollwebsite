@@ -2,7 +2,7 @@ let fallendoll = document.getElementById("fallendoll") // gets the fallen doll l
 let fallen_doll_fade_elements = fallendoll.getElementsByClassName("fade") // gets the fade element within it.
 let fallen_doll_fade_element = fallen_doll_fade_elements[0] // gets the first fade element
 
-let pages_id = ["landing", "fallendoll", "what"]
+let pages_id = ["fallendoll", "trailer_page", "about_page"]
 
 let pages = []
 
@@ -17,6 +17,8 @@ window.onwheel = scroll_page
 window.onresize = resize
 
 let current_page = 0
+
+fallen_doll_fade_element.style.opacity = 0;
 
 let scrolled = 0
 function scroll_page(event) {
@@ -43,7 +45,9 @@ function scroll(direction) {
 
     pages[current_page].scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"})
 
-    if(current_page == 1) fallen_doll_fade_element.style.opacity = 0;
+    current_page == 2 ?
+        navigator_switch_theme(true)
+        : navigator_switch_theme(false)
 }
 
 function resize() {

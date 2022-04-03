@@ -92,3 +92,41 @@
     /* Center Video */
 }
 
+.page_content .context_video_background {
+    width: 90vw;
+    height: 80vh;
+    position: absolute;
+
+    clip-path: polygon(0 0, 84% 0, 100% 26%, 100% 100%, 16% 100%, 0% 76%);
+    border: 14px double #0f151d;
+    box-sizing: border-box;
+}
+
+.page_content .context_video_background.right {
+    width: 500px;
+    height: 260px;
+
+    position: relative;
+}
+
+.page_content .context_video_background .filter {
+    position: absolute;
+
+    width: 100vw;
+    height: 100vh;
+
+    background-color: rgba(0, 0, 0, 60%);
+}
+
+.page_content .context_video_background video {
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    /* Fill Screen Without Squishing Video */
+    object-fit: cover;
+
+    /* Center Video */
+}
+
