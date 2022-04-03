@@ -65,3 +65,8 @@ window.addEventListener("keydown", (e) => {
     // If the key that's pressed matches one of the keys in the array, e.preventDefault()
     if (keys.includes(e.code)) e.preventDefault()
 })
+
+window.addEventListener("mousedown", (e) => {
+    if(e.buttons == 4) e.preventDefault()
+})
+

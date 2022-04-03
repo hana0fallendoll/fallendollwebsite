@@ -15,7 +15,7 @@ section#fallendoll .title {
 }
 
 section#fallendoll .title .logo_container {
-    margin-right: 60px;
+    margin-right: 54px;
 }
 
 section#fallendoll .buttons_container {
@@ -28,13 +28,15 @@ section#fallendoll .buttons_container {
 
 section#fallendoll .buttons_container .button {
     background-color: #FFFFFF;
-    border-radius: 15px;
+    border-radius: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
     padding: 20px 30px 20px 30px;
     gap: 16px;
+
+    width: 180px;
 
     user-select: none;
     -webkit-user-drag: none;
@@ -43,10 +45,10 @@ section#fallendoll .buttons_container .button {
     -ms-user-select: none;
     -ms-touch-select: none;
 
-    -webkit-transition: transform 250ms 0s ease-in-out;
-    -moz-transition: transform 250ms 0s ease-in-out;
-    -o-transition: transform 250ms 0s ease-in-out;
-    transition: transform 250ms 0s ease-in-out;
+    -webkit-transition: all 250ms 0s ease-in-out;
+    -moz-transition: all 250ms 0s ease-in-out;
+    -o-transition: all 250ms 0s ease-in-out;
+    transition: all 250ms 0s ease-in-out;
 }
 
 section#fallendoll .buttons_container .button:hover {
@@ -54,10 +56,10 @@ section#fallendoll .buttons_container .button:hover {
 }
 
 section#fallendoll .buttons_container .button:active {
-    -webkit-transition: transform 70ms 0s ease-in-out;
-    -moz-transition: transform 70ms 0s ease-in-out;
-    -o-transition: transform 70ms 0s ease-in-out;
-    transition: transform 70ms 0s ease-in-out;
+    -webkit-transition: all 70ms 0s ease-in-out;
+    -moz-transition: all 70ms 0s ease-in-out;
+    -o-transition: all 70ms 0s ease-in-out;
+    transition: all 70ms 0s ease-in-out;
 
     transform: scale(120%);
 }

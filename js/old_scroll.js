@@ -72,6 +72,7 @@ function save_page() {
 // Difference between preventing "scroll" and "wheel" is that wheel only prevents input, not scrolling.
 
 window.addEventListener("wheel", e => e.preventDefault(), { passive: false })
+window.addEventListener("")
 
 // When scroll input is detected, scroll_page
 window.onwheel = scroll_page
