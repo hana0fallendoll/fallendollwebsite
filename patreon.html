@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/patreon.css">
+    <link rel="stylesheet" href="css/navigator.css">
+</head>
+
+<body>
+    <div class="page visible" id="home_page">
+        <div class="logo">
+            <img src="img/logo.png" alt="">
+        </div>
+
+        <div class="br"></div>
+
+        <p>This webpage is separate from the landing page and is for Patreon supporters.</p>
+
+        <div class="br"></div>
+        <div class="br"></div>
+
+        <div class="button">
+            <div class="outside"></div>
+            <div class="inside"></div>
+            <div class="text">
+                <a>CLAIM STEAM KEY</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="page" id="builds_page">
+        <h1>Builds</h1>
+
+        <div class="br"></div>
+
+        <div class="list">
+            <div class="item">
+                <p class="name">Operation Lovecraft 0.34</p>
+                <div class="dropdown download" tabindex="0">
+                    <div class="text">
+                        <p>Download</p>
+                    </div>
+                    <div class="dropdown_content">
+                        <p class="download">Operation Lovecraft 0.34 Desktop</p>
+                        <p class="download">Operation Lovecraft 0.34 Virtual Reality</p>
+                    </div>
+                </div>
+
+                <div class="dropdown" tabindex="0">
+                    <div class="text">
+                        <p>?</p>
+                    </div>
+                    <div class="dropdown_content">
+                        <p class="small">Version: Operation Lovecraft 0.34 | Created Date: 2021-10-25</p>
+                        
+                        <p class="big">0.34 Patch Notes:</p>
+
+                        <ol>
+                            <li>New language: Tranditional Chinese</li>
+                            <li>Dr.Anya's Voivode Command Uniform</li>
+                            <li>New sex scenes and new voice acting for Erika's forced scenes</li>
+                            <li>Better optimization and asset compression (the file size is now roughly 4GB)</li>
+                            <li>Auto benchmark and better presets for new players</li>
+                            <li>More detailed texture and mesh around the Dreamer's rear, if you get what I mean</li>
+                            <li>Better ahegao and tongue</li>
+                            <li>Improved environment and sperm visual effects</li>
+                            <li>Bug and translation error fixes</li>
+                        </ol>
+
+                        <br>
+
+                        <p class="big">Pose list:</p>
+
+                        <ul>
+                            <li>Alet + Dreamer V 14</li>
+                            <li>Alet + Dreamer V 15</li>
+                            <li>Alet + Dreamer Legjob 2</li>
+                            <li> Anya + Deep One V 02</li>
+                            <li>Anya + ElderThing V 04</li>
+                            <li>Anya + Ghast A 03</li>
+                            <li>Erika + Dreamer V 13</li>
+                            <li>Erika + Ghast A 02</li>
+                            <li>Erika + Hound F 01</li>
+                        </ul>
+
+                        <br>
+
+                        <p class="big">Known Issues:</p>
+
+                        <ul class="no_points">
+                            <li>Dr.Anya's breast is not affected by gravity when wearing Voivode command uniform.</li>
+                            <li>Dreamer's lip animation fails to load</li>
+                        </ul>
+
+                        <br> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="navigator patreon">
+        <p onclick='window.location.href = "index.html"'>Back To Landing</p>
+
+        <div class="seperator"></div>
+
+        <p onclick='switch_page("home_page")'>Home</p>
+        <p onclick='switch_page("builds_page")'>Builds</p>
+        <p onclick='switch_page("rewards_page")'>Limited Rewards</p>
+        <p onclick='switch_page("credits_page")'>You In Credits</p>
+        <p>{USERNAME}</p>
+    </div>
+
+    <script src="js/patreon.js"></script>
+</body>
+
+</html>

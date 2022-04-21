@@ -1,0 +1,456 @@
+html,
+body {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+a, p, svg, img {
+    pointer-events: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+}
+
+.master_container {
+    width: 100%;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.pages {
+    position: relative;
+
+    width: 100%;
+    height: 100%;
+}
+
+section {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    --background: #000000;
+    --foreground: #ffffff;
+    --shadow: #ffffff88;
+
+    background-color: var(--background);
+}
+
+section.white {
+    --background: #ffffff;
+    --foreground: #000000;
+    --shadow: #00000045;
+}
+
+section.video {
+    background-color: #00000000;
+}
+
+section .page_content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section .page_content .background_video {
+    width: 100vw;
+    height: 100vh;
+
+    position: absolute;
+
+    z-index: -2;
+}
+
+section .page_content .background_video video {
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    /* Fill Screen Without Squishing Video */
+    object-fit: cover;
+    opacity: 1;
+}
+
+section .page_content .background_video .filter {
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: #00000080;
+}
+
+section .page_content .viggnette_bottom {
+    position: absolute;
+    width: 100vw;
+    height: 50vh;
+    left: 0px;
+    bottom: 0px;
+
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 100%, #000000 100%);
+
+    z-index: -1;
+}
+
+section .page_content .image_background {
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+}
+
+section .page_content .image_background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.3;
+}
+
+section .floating_effects {
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    pointer-events: none;
+    position: absolute;
+    display: grid;
+    grid-template-columns: 10vh auto 10vh;
+}
+
+.leftbound .blocks .top_half {
+    display: flex;
+    flex-direction: column;
+    padding-top: 7.5vh;
+    gap: calc(100vh - 88vh);
+}
+
+.leftbound .blocks .bottom_half {
+    display: flex;
+    flex-direction: column-reverse;
+    padding-bottom: 7.5vh;
+    gap: calc(100vh - 88vh);
+}
+
+.leftbound .page_lining {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin-left: 5vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.leftbound .page_lining .blocks {
+    width: 10px;
+    display: grid;
+    grid-template-rows: auto auto;
+    height: 100%;
+}
+
+.leftbound .page_lining .line {
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    background-color: var(--foreground);
+
+    box-shadow: var(--glitch-shadow);
+}
+
+.blocks .block {
+    width: 6px;
+    height: 6px;
+    background-color: var(--foreground);
+}
+
+.blocks .block.big {
+    width: 10px;
+    height: 10px;
+}
+
+.single_block {
+    width: 20px;
+    height: 20px;
+    background-color: var(--foreground);
+
+    box-shadow: var(--glitch-shadow);
+
+    animation: infinite 7s ease-in-out floating;
+}
+
+.single_block.down {
+    position: relative;
+    top: 11px;
+}
+
+.single_block_container.top {
+    display: flex;
+    flex-direction: column;
+    justify-content: left !important;
+    align-items: flex-start !important;
+}
+
+.single_block_container.half_left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2vh 20vw 2vh 0px;
+}
+
+.center {
+    display: grid;
+    grid-template-rows: auto auto;
+}
+
+.center .top_half {
+    position: relative;
+    margin: 7.5vh 4vw 0px 4vw;
+    display: flex;
+    flex-direction: column;
+
+    transition: all 1s 0s cubic-bezier( 0.9, 0, 0.1, 1);
+    transition-delay: 200ms;
+}
+
+.center .bottom_half {
+    position: relative;
+    margin: 0px 4vw 7.5vh 4vw;
+    display: flex;
+    flex-direction: column-reverse;
+
+    transition: all 1s 0s cubic-bezier( 0.9, 0, 0.1, 1);
+    transition-delay: 200ms;
+}
+
+.center .bottom_half .block_layout {
+    display: grid;
+    grid-template-rows: auto 20px;
+}
+
+.center .bottom_half .text_container {
+    height: 13vh;
+    display: grid;
+    grid-template-columns: auto auto 20px;
+}
+
+.center .text_container .text {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding-right: 3vw;
+}
+
+.center .text_container .text a {
+    width: auto;
+
+    color: var(--foreground);
+    font-size: 10vh;
+
+    font-family: "Montserrat Black";
+
+    animation: infinite 7s ease-in-out floating;
+    animation-delay: 4s;
+
+    text-shadow: var(--glitch-shadow);
+}
+
+.center .block_seperator {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 20% auto;
+}
+
+.center .single_block_container {
+    display: flex;
+    justify-content: center;
+}
+
+.center .top_half {
+    display: flex;
+    flex-direction: column;
+}
+
+.center .top_half .layer_big {
+    flex-direction: column;
+}
+
+.center .layer_small {
+    width: 100%;
+    height: 11px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    animation: infinite 9s ease-in-out floating;
+    animation-delay: 2.3s;
+}
+
+.center .layer_small.single_block_seperator {
+    display: grid;
+    grid-template-columns: 20% auto;
+    height: 20px;
+}
+
+.center .layer_small.single_block_seperator.right {
+    grid-template-columns: auto 20%;
+}
+
+.center .layer_small.single_block_seperator.right .single_block_and_lines_seperator .blocks {
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.center .layer_small.left {
+    align-items: flex-start;
+}
+
+.center .layer_big {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.center .line {
+    width: 100%;
+    height: 1px;
+    background-color: var(--foreground);
+
+    box-shadow: var(--glitch-shadow);
+}
+
+.center .blocks {
+    height: 10px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    gap: calc(100vw - 88vw);
+}
+
+.center .blocks a {
+    font-family: monospace;
+    position: absolute;
+    margin-top: 18px;
+    margin-bottom: 18px;
+    max-width: 25vw;
+    font-size: 11px;
+    color: var(--foreground);
+}
+
+.rightbound {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.rightbound .side_text {
+    width: 26px;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 20vh auto 20vh;
+}
+
+.rightbound .side_text a {
+    -webkit-transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    -o-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+
+    writing-mode: tb-rl;
+
+    color: var(--foreground);
+    text-align: center;
+    font-size: 10px;
+    font-family: monospace;
+}
+
+.leftbound {
+    display: flex;
+    flex-direction: row;
+}
+
+.leftbound .side_text {
+    width: 26px;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 20vh auto 20vh;
+}
+
+.leftbound .side_text a {
+    -webkit-transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    -o-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+
+    writing-mode: tb-rl;
+
+    color: var(--foreground);
+    margin-left: 13px;
+    text-align: center;
+    font-size: 10px;
+    font-family: monospace;
+}
+
+.center .bottom_half.left .layer_small.single_block_seperator {
+    grid-template-columns: auto 20%;
+}
+
+.center .bottom_half.left .layer_big .text_container {
+    grid-template-columns: 20px auto auto;
+}
+
+.center .bottom_half.left .layer_big .text_container .text {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-left: 3vw;
+}
+
+@keyframes floating {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-8px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.animate_on_scroll {
+    transform: translateY(40vh);
+}
+
+.animate_with_order_delay {
+    transition: transform 1s cubic-bezier(0.9, 0, 0.1, 1);
+    transition-delay: calc(var(--animation-order) * 80ms);
+}
+
+.animate_on_scroll.from_right {
+    transform: translateX(100vh);
+}
+
+.animate_on_scroll.from_left {
+    transform: translateX(-100vh);
+}
+
+@media only screen and (max-width: 900px) {
+    .center .blocks a {
+        display: none;
+    }
+
+    .leftbound .side_text {
+        display: none;
+    }
+}

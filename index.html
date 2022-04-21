@@ -5,199 +5,642 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project Helius - Home</title>
-    <link rel="stylesheet" href="css/default.css">
-    <link rel="stylesheet" href="css/media_background.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/landing_page.css">
+    <link rel="stylesheet" href="css/character.css">
+    <link rel="stylesheet" href="css/info.css">
     <link rel="stylesheet" href="css/navigator.css">
-    <link rel="stylesheet" href="css/page_sections.css">
-    <link rel="stylesheet" href="css/video_player.css">
-    <link rel="stylesheet" href="css/fallen_doll_landing.css">
-    <link rel="stylesheet" href="css/page_template.css">
-    <link rel="stylesheet" href="css/change_colors.css">
 </head>
 
 <body>
-    <div class="master_container" id="master_container">
-        <div class="relative_components">
-            <section id="fallendoll">
-                <div class="page_content video">
-                    <div class="video_background">
-                        <video src="css/video/trailer.mp4" autoplay muted loop></video>
+    <div class="master_container">
+        <div class="navigator">
+            <svg width="135" height="31" viewBox="0 0 135 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M43.7389 15.4737C43.8812 15.481 44.0481 15.4882 44.2294 15.4937C44.7739 15.5101 45.4726 15.5112 46.028 15.4416C46.4513 15.3886 47.1695 15.1823 47.7896 14.6255C48.4254 14.0546 48.921 13.1472 48.921 11.7732C48.921 10.3692 48.3117 9.47426 47.6358 8.93449C46.98 8.41075 46.275 8.2296 46.0357 8.19533C45.6797 8.14435 44.9694 8.14635 44.3894 8.15732C44.0904 8.16298 43.8116 8.17145 43.6076 8.1785C43.5056 8.18203 43.4221 8.1852 43.364 8.1875C43.335 8.18865 43.3123 8.18959 43.2968 8.19023L43.2727 8.19125L42.8454 8.20988V21.7142H43.7389V15.4737ZM43.2921 8.63862L43.2727 8.19125C43.2727 8.19125 43.2727 8.19125 43.2921 8.63862ZM43.7389 9.07018V14.5769C43.8853 14.5847 44.0623 14.5927 44.2563 14.5985C44.7924 14.6146 45.4338 14.6135 45.9171 14.5529C46.2086 14.5164 46.7413 14.3644 47.1934 13.9585C47.6297 13.5667 48.0276 12.9068 48.0276 11.7732C48.0276 10.6695 47.5647 10.0228 47.0791 9.63495C46.5734 9.23113 46.0275 9.09882 45.9094 9.08191C45.64 9.04333 45.0101 9.04133 44.4062 9.05275C44.1596 9.05741 43.9263 9.06405 43.7389 9.07018Z" fill="white"/>
+                <path d="M85.7556 19.8611C86.1043 20.2158 86.5703 20.3702 86.9813 20.4295C87.1834 20.4587 87.362 20.4633 87.4891 20.4605C87.5523 20.4591 87.602 20.456 87.6344 20.4533C87.6506 20.452 87.6624 20.4508 87.6694 20.4501L87.6757 20.4494C87.6757 20.4494 87.6754 20.4494 87.7315 20.8932C87.7875 21.3369 87.7872 21.3369 87.7872 21.3369L87.7869 21.337L87.7841 21.3373L87.7786 21.338L87.7737 21.3386L87.7615 21.3399C87.7476 21.3414 87.7284 21.3433 87.7045 21.3452C87.6567 21.3491 87.5899 21.3533 87.5078 21.355C87.3443 21.3586 87.1169 21.3528 86.8578 21.3154C86.3463 21.2416 85.6689 21.0382 85.1337 20.4937C84.7466 20.1 84.5655 19.6089 84.4784 19.2422C84.4342 19.0556 84.412 18.8916 84.4008 18.7731C84.3952 18.7137 84.3923 18.665 84.3908 18.6298L84.3902 18.6148L84.3898 18.6024L84.3897 18.5962L84.3895 18.5874L84.3893 18.5798L84.3892 18.5743L84.3892 18.5698L84.3892 18.5682V18.5672C84.3892 18.5672 84.3892 18.5669 84.829 18.5669H84.3892V13.7435H82.8731V12.8479H84.3892V9.88987H85.2687L85.2687 12.8479H87.6979V13.7435H85.2687V18.5654L85.2688 18.5688C85.2689 18.5715 85.269 18.5758 85.2692 18.5814L85.2695 18.5909C85.2704 18.6121 85.2723 18.6452 85.2764 18.6877C85.2844 18.7734 85.3008 18.8946 85.3334 19.0323C85.4003 19.3143 85.527 19.6285 85.7556 19.8611Z" fill="white"/>
+                <path d="M77.791 14.3565C79.009 12.855 80.6753 12.8479 82.5157 12.8479V13.7435C80.6035 13.7435 79.3964 13.7971 78.4843 14.9215C78.1791 15.2978 77.9882 15.6206 77.8694 15.9556C77.7503 16.2909 77.6946 16.6632 77.6909 17.1501C77.6868 17.6937 77.7513 18.1176 77.8951 18.4939C78.0387 18.8692 78.2715 19.2241 78.6408 19.6152C79.5278 20.5545 80.5526 20.5529 82.2346 20.5502C82.3263 20.55 82.42 20.5499 82.5157 20.5499V21.4455C82.3907 21.4455 82.2667 21.4461 82.1436 21.4467L82.143 21.4467C80.5693 21.4541 79.1534 21.4608 77.9919 20.2308C77.5639 19.7775 77.2563 19.3255 77.0608 18.8144C76.8658 18.3043 76.7928 17.7622 76.7975 17.1433C76.8016 16.5903 76.8654 16.1122 77.0276 15.6554C77.1898 15.1982 77.4418 14.7871 77.791 14.3565Z" fill="white"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M71.4366 20.6395C73.1476 20.6395 74.5705 19.4034 74.8652 17.7736H75.7703C75.4668 19.9002 73.6422 21.535 71.4366 21.535C69.0187 21.535 67.0586 19.5703 67.0586 17.1467C67.0586 14.723 69.0187 12.7583 71.4366 12.7583C73.8545 12.7583 75.8146 14.723 75.8146 17.1467C75.8146 17.2369 75.8119 17.3265 75.8066 17.4154H67.9622C68.0991 19.2188 69.6023 20.6395 71.4366 20.6395ZM67.9804 16.6989C68.1997 14.9814 69.6635 13.6539 71.4366 13.6539C73.2097 13.6539 74.6735 14.9814 74.8928 16.6989H67.9804Z" fill="white"/>
+                <path d="M65.2716 10.4298C65.2716 10.7266 65.0316 10.9671 64.7355 10.9671C64.4395 10.9671 64.1995 10.7266 64.1995 10.4298C64.1995 10.133 64.4395 9.89243 64.7355 9.89243C65.0316 9.89243 65.2716 10.133 65.2716 10.4298Z" fill="white"/>
+                <path d="M62.4598 25.1011C62.8773 25.0418 63.3506 24.8871 63.7049 24.5321C63.9371 24.2993 64.0658 23.9848 64.1337 23.7025C64.1669 23.5647 64.1835 23.4433 64.1917 23.3576C64.1958 23.315 64.1977 23.2819 64.1987 23.2608L64.199 23.2512L64.1992 23.2446L64.1994 23.2386L64.1995 23.2352V12.5792H65.0929V23.2367H64.6462C65.0929 23.2367 65.0929 23.2369 65.0929 23.2369L65.0929 23.238L65.0929 23.2396L65.0929 23.2441L65.0928 23.2496L65.0927 23.2572C65.0925 23.2678 65.0921 23.282 65.0913 23.2997C65.0898 23.3349 65.0868 23.3836 65.0811 23.4431C65.0698 23.5617 65.0473 23.7258 65.0023 23.9127C64.9139 24.2797 64.7298 24.7712 64.3367 25.1654C63.793 25.7103 63.1048 25.914 62.5853 25.9878C62.3221 26.0252 62.0911 26.031 61.9249 26.0275C61.8415 26.0257 61.7736 26.0216 61.7251 26.0177C61.7008 26.0157 61.6814 26.0139 61.6672 26.0124C61.6601 26.0116 61.6543 26.0109 61.6499 26.0104L61.6443 26.0098L61.6415 26.0094L61.6411 26.0094C61.6411 26.0094 61.6408 26.0093 61.6977 25.5652C61.7547 25.121 61.7544 25.121 61.7544 25.121L61.7607 25.1217C61.7643 25.1221 61.7692 25.1226 61.7752 25.1231C61.7811 25.1237 61.7881 25.1243 61.7963 25.1249C61.8292 25.1276 61.8797 25.1307 61.9439 25.1321C62.0731 25.1349 62.2545 25.1303 62.4598 25.1011Z" fill="white"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M62.5912 17.1467C62.5912 19.5703 60.6311 21.535 58.2132 21.535C55.7953 21.535 53.8351 19.5703 53.8351 17.1467C53.8351 14.723 55.7953 12.7583 58.2132 12.7583C60.6311 12.7583 62.5912 14.723 62.5912 17.1467ZM61.6977 17.1467C61.6977 19.0757 60.1376 20.6395 58.2132 20.6395C56.2887 20.6395 54.7286 19.0757 54.7286 17.1467C54.7286 15.2177 56.2887 13.6539 58.2132 13.6539C60.1376 13.6539 61.6977 15.2177 61.6977 17.1467Z" fill="white"/>
+                <path d="M51.9173 14.3288C52.2716 13.9737 52.7449 13.8191 53.1624 13.7597C53.3678 13.7305 53.5492 13.726 53.6783 13.7287C53.7425 13.7301 53.793 13.7333 53.8259 13.7359C53.8424 13.7372 53.8544 13.7384 53.8615 13.7391L53.8678 13.7398C53.8678 13.7398 53.8675 13.7398 53.9245 13.2957C53.9814 12.8515 53.9811 12.8515 53.9811 12.8515L53.98 12.8513L53.978 12.8511L53.9724 12.8504C53.9679 12.8499 53.9622 12.8492 53.9551 12.8485C53.9408 12.847 53.9214 12.8451 53.8971 12.8432C53.8486 12.8393 53.7807 12.8351 53.6973 12.8333C53.5312 12.8298 53.3002 12.8356 53.037 12.873C52.5174 12.9469 51.8293 13.1505 51.2856 13.6955C50.8924 14.0896 50.7083 14.5811 50.6199 14.9482C50.5749 15.135 50.5524 15.2991 50.5411 15.4177C50.5354 15.4772 50.5325 15.526 50.5309 15.5612C50.5302 15.5788 50.5298 15.5931 50.5295 15.6037L50.5294 15.6114L50.5293 15.6168L50.5293 15.6212L50.5293 15.6229L50.5293 15.6236L50.5293 15.6239C50.5293 15.6239 50.5293 15.6242 50.976 15.6242H50.5293V21.7142H51.4228V15.6256L51.4228 15.6223C51.4229 15.6181 51.4231 15.6106 51.4236 15.6001C51.4245 15.5789 51.4264 15.5458 51.4305 15.5032C51.4387 15.4175 51.4553 15.2961 51.4885 15.1583C51.5564 14.8761 51.6851 14.5616 51.9173 14.3288Z" fill="white"/>
+                <path d="M93.7735 8.28038V21.7142H94.667V14.639H101.547V21.7142H102.44V8.28038H101.547V13.7434H94.667V8.28038H93.7735Z" fill="white"/>
+                <path d="M115.038 8.28038V21.7142H115.932V8.28038H115.038Z" fill="white"/>
+                <path d="M119.238 10.4298C119.238 10.7266 118.998 10.9671 118.701 10.9671C118.405 10.9671 118.165 10.7266 118.165 10.4298C118.165 10.133 118.405 9.89243 118.701 9.89243C118.998 9.89243 119.238 10.133 119.238 10.4298Z" fill="white"/>
+                <path d="M118.344 21.7142H119.238V12.5792H118.344V21.7142Z" fill="white"/>
+                <path d="M128.031 14.7023C128.044 15.9131 128.044 17.4232 127.993 18.5991C127.942 19.7724 127.421 20.5328 126.729 20.9818C126.061 21.4147 125.273 21.535 124.688 21.535C124.155 21.535 123.405 21.44 122.765 21.012C122.098 20.5663 121.611 19.8007 121.561 18.5983C121.516 17.5112 121.516 16.0012 121.527 14.7693C121.533 14.152 121.541 13.6021 121.548 13.2066C121.552 13.0087 121.555 12.8495 121.557 12.7396L121.561 12.5688C121.561 12.5688 121.561 12.5688 122.007 12.5792C122.454 12.5896 122.454 12.5897 122.454 12.5897L122.453 12.6328C122.452 12.6614 122.451 12.7036 122.45 12.7582C122.448 12.8673 122.445 13.0256 122.441 13.2224C122.434 13.6161 122.426 14.1633 122.421 14.7774C122.409 16.0084 122.409 17.4986 122.454 18.561C122.493 19.5079 122.855 19.9961 123.26 20.2669C123.692 20.5554 124.238 20.6395 124.688 20.6395C125.174 20.6395 125.771 20.5359 126.243 20.2299C126.69 19.9401 127.062 19.4467 127.101 18.5602C127.15 17.4097 127.151 15.9196 127.138 14.7117C127.132 14.1089 127.122 13.5785 127.114 13.1989C127.11 13.0091 127.107 12.8571 127.104 12.7526C127.103 12.7003 127.102 12.6599 127.101 12.6327L127.1 12.5921L127.1 12.5915C127.1 12.5915 127.1 12.5915 127.547 12.5792C127.993 12.5669 127.993 12.5671 127.993 12.5671L127.993 12.5676L127.995 12.6094C127.995 12.6371 127.996 12.6779 127.998 12.7307C128 12.8362 128.004 12.9893 128.008 13.1803C128.016 13.5623 128.025 14.0958 128.031 14.7023Z" fill="white"/>
+                <path d="M132.372 12.6687C131.136 12.6687 129.967 13.424 129.785 14.7574C129.72 15.2278 129.801 15.6317 130.002 15.9738C130.197 16.306 130.485 16.5459 130.778 16.7323C131.066 16.9152 131.39 17.0651 131.68 17.1995L131.691 17.2045C131.996 17.3457 132.264 17.4705 132.489 17.614C133.009 17.9459 133.269 18.112 133.425 18.3039C133.547 18.4534 133.626 18.6477 133.622 19.1133C133.619 19.5756 133.458 19.9473 133.188 20.2043C132.918 20.462 132.501 20.6395 131.925 20.6395C131.247 20.6395 130.736 20.4601 130.398 20.286C130.229 20.1987 130.103 20.1125 130.022 20.0507C129.981 20.0199 129.952 19.9953 129.935 19.9799C129.926 19.9722 129.92 19.9668 129.917 19.9641L129.917 19.9643C129.917 19.9643 129.918 19.9646 129.602 20.2812C129.286 20.5979 129.286 20.5982 129.286 20.5982L129.287 20.5985L129.287 20.5992L129.289 20.6008L129.293 20.6049C129.296 20.608 129.3 20.6119 129.305 20.6164C129.315 20.6255 129.328 20.6375 129.344 20.6518C129.376 20.6805 129.422 20.7189 129.481 20.7636C129.598 20.8529 129.768 20.9683 129.989 21.0824C130.434 21.3114 131.084 21.535 131.925 21.535C132.688 21.535 133.339 21.2962 133.804 20.8531C134.269 20.4094 134.51 19.7959 134.516 19.1206C134.521 18.5428 134.421 18.1102 134.117 17.7369C133.865 17.4285 133.487 17.1882 133.063 16.9181L132.969 16.8584C132.689 16.68 132.37 16.5324 132.082 16.399L132.066 16.3915C131.762 16.2506 131.489 16.1236 131.257 15.9759C131.026 15.8294 130.867 15.682 130.772 15.5197C130.683 15.3674 130.63 15.1697 130.67 14.8789C130.778 14.0909 131.471 13.5643 132.372 13.5643C132.813 13.5643 133.233 13.7133 133.557 13.8753C133.716 13.955 133.845 14.0347 133.933 14.0936C133.977 14.123 134.01 14.1469 134.032 14.1627L134.037 14.1669C134.045 14.1727 134.051 14.1771 134.055 14.1799L134.058 14.1828C134.058 14.1828 134.058 14.1827 134.337 13.833C134.616 13.4833 134.616 13.4832 134.616 13.4832L134.616 13.483L134.615 13.4826L134.614 13.4815L134.61 13.4787C134.608 13.4765 134.604 13.4736 134.599 13.47C134.59 13.463 134.578 13.4534 134.562 13.4417C134.53 13.4183 134.485 13.3863 134.429 13.3485C134.316 13.2731 134.155 13.1736 133.956 13.0743C133.565 12.8781 133.003 12.6687 132.372 12.6687Z" fill="white"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M112.391 17.7736C112.096 19.4034 110.674 20.6395 108.963 20.6395C107.128 20.6395 105.625 19.2188 105.488 17.4153H113.333C113.338 17.3265 113.341 17.2369 113.341 17.1467C113.341 14.723 111.38 12.7583 108.963 12.7583C106.545 12.7583 104.585 14.723 104.585 17.1467C104.585 19.5703 106.545 21.535 108.963 21.535C111.168 21.535 112.993 19.9002 113.296 17.7736H112.391ZM108.963 13.6539C107.189 13.6539 105.726 14.9814 105.506 16.6989H112.419C112.199 14.9814 110.736 13.6539 108.963 13.6539Z" fill="white"/>
+                <path d="M16.3212 30.237C16.6405 29.6113 16.9929 28.8868 17.281 28.2667C23.6815 27.3172 28.5923 21.7995 28.5923 15.1349C28.5923 12.8248 28.0023 10.6524 26.9647 8.76041C27.3185 8.02259 27.642 7.34661 27.9233 6.75802C29.5203 9.15671 30.451 12.0371 30.451 15.1349C30.451 23.156 24.2114 29.7197 16.3212 30.237Z" fill="white"/>
+                <path d="M15.3161 1.85867C12.407 1.85867 9.71642 2.79434 7.52891 4.38116H4.66613C7.4008 1.67271 11.1631 0 15.3161 0C19.4691 0 23.2314 1.67271 25.9661 4.38116H23.1033C20.9158 2.79434 18.2252 1.85867 15.3161 1.85867Z" fill="white"/>
+                <path d="M2.81661 6.59842L3.78913 8.54347C2.67615 10.4856 2.03989 12.736 2.03989 15.1349C2.03989 21.8501 7.02551 27.4009 13.4972 28.2876C13.8664 28.9848 14.2418 29.6745 14.5638 30.2514C6.55452 29.8594 0.181213 23.2414 0.181213 15.1349C0.181213 11.9681 1.15382 9.02847 2.81661 6.59842Z" fill="white"/>
+                <path d="M9.93924 20.1135L2.23903 4.71306H11.0013C11.0013 4.71306 9.15722 6.70265 9.20905 7.16916C9.27543 7.7666 9.7401 9.29336 10.4703 9.29336C10.4927 9.29336 10.5068 9.18176 10.53 8.99879C10.6438 8.0988 10.976 5.47222 13.5902 5.90792C13.6826 5.92332 13.7834 5.93894 13.8912 5.95566C15.6438 6.22734 19.2746 6.79019 19.3654 11.4176C19.4154 13.9693 17.5421 14.1829 16.7301 14.2754C16.4648 14.3057 16.3128 14.323 16.3782 14.4047C17.0445 15.2376 18.8343 15.5996 18.8343 15.5996C18.8343 15.5996 21.7551 16.4625 21.7551 10.2891C21.7551 7.03572 17.6395 4.71306 17.6395 4.71306H28.526C28.526 4.71306 19.5645 23.5653 18.6352 24.7602C18.021 25.5498 16.8018 23.8202 16.9756 22.8351C17.0349 22.4994 17.3002 22.0088 17.5982 21.458C18.3019 20.1571 19.1875 18.5198 17.9714 17.7901C16.7765 17.0732 12.4617 20.9101 12.4617 20.9101C12.4617 20.9101 14.254 17.9229 15.7808 12.1478C16.0463 8.89507 12.7273 9.02784 12.7273 9.02784C12.7273 9.02784 13.2583 10.4218 13.1919 11.4839C13.0808 13.2616 12.7379 15.0302 11.8788 16.5905L9.93924 20.1135Z" fill="white"/>
+                <path d="M13.3945 23.3671C13.2615 23.5096 13.1813 23.5956 13.0874 23.6623C12.9447 23.7637 12.7705 23.8207 12.3315 23.9643C12.2172 24.0017 12.085 24.0449 11.9307 24.0964C11.6016 24.2061 15.3161 31 15.4489 31C15.648 31 17.8772 26.3919 17.7722 26.2869C17.7274 26.2421 17.572 26.2125 17.3618 26.1726C16.9496 26.0941 16.3265 25.9756 15.9136 25.6231C15.3657 25.1555 15.0457 24.7171 14.8515 23.9636C14.7577 23.6002 14.7964 23.1029 14.8281 22.6957C14.8577 22.3153 14.8812 22.0134 14.7851 21.9722C14.6844 21.929 14.5744 22.0541 14.2362 22.4387C14.0541 22.6458 13.8059 22.9281 13.4574 23.2998C13.4352 23.3235 13.4143 23.3459 13.3945 23.3671Z" fill="white"/>
+            </svg>
+
+            <div class="seperator"></div>
+
+            <p onclick='window.location.href = "patreon.html"'>Log In</p>
+        </div>
+
+        <div class="pages">
+            <section id="landing_page" class="video">
+                <div class="page_content">
+                    <div class="background_video">
+                        <video src="video/trailer.mp4" autoplay muted loop></video>
                         <div class="filter"></div>
                     </div>
-                    <div class="fade"></div>
-                    <div class="drop_shadow"></div>
+                    <div class="viggnette_bottom"></div>
+
                     <div class="title">
                         <div class="logo_container">
-                            <img src="css/images/logo.png" alt="">
+                            <img src="img/logo.png" alt="">
                         </div>
+                        <div class="game_link">
+                            <div class="get_button" onclick='window.location.href = "https://store.steampowered.com/app/1685960/Operation_Lovecraft_Fallen_Doll/"'>
+                               <div class="text"><a>PLAY DEMO FREE</a></div>
+                            </div>
 
-                        <div class="buttons_container">
-                            <div class="button" onclick='window.location.href = "https://store.steampowered.com/app/1685960/Operation_Lovecraft_Fallen_Doll/"'>
-                                <div class="text">
-                                    <a>PLAY DEMO FREE</a>
-                                </div>
+                            <div class="get_button" onclick='window.location.href = "https://patreon.com/ProjectH/"'>
+                                <div class="text"><a>CLAIM BETA KEY</a></div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </section>
 
-            <section id="trailer_page">
-                <div class="page_content">
-                    <div class="context_container">
-                        <div class="context_video_background">
-                            <video src="css/video/harem.mp4" autoplay muted loop></video>
-                            <div class="filter"></div>
-                        </div>
-
-                        <div class="text_container_wrapper bottom_right">
-                            <div class="text_container bottom_right">
-                                <a class="info_text">CLOSED BETA TRAILER</a>
-                                <a class="heading">TRAILER</a>
-                                <div class="button" onclick='toggle_element("play_trailer", "none", "flex"); reload_embed("landing_video_embed")'>
-                                    <div class="text">
-                                        <a>WATCH TRAILER</a>
+                    <div class="floating_effects">
+                        <div class="leftbound">
+                            <div class="side_text">
+                                <a>PLAY FREE</a>
+                                <a>PAGE 1</a>
+                                <a>PROCEED TO NEXT PAGE</a>
+                            </div>
+                            <div class="page_lining">
+                                <div class="line"></div>
+                                <div class="blocks">
+                                    <div class="top_half">
+                                        <div class="block big"></div>
+                                        <div class="block"></div>
+                                    </div>
+                                    <div class="bottom_half">
+                                        <div class="block big"></div>
+                                        <div class="block"></div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+
+                        <div class="center">
+                            <div class="top_half">
+                                <div class="layer_big">
+                                    <div class="single_block_container half_left">
+                                        <div class="single_block"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="bottom_half">
+                                <div class="layer_small single_block_seperator right">
+                                    <div class="single_block_and_lines_seperator">
+                                        <div class="line"></div>
+                                        <div class="blocks">
+                                            <div class="block big"></div>
+                                            <div class="block"></div>
+                                            <div class="block"></div>
+                                        </div>
+                                    </div>
+                                    <div class="single_block_container center">
+                                        <div class="single_block"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="rightbound">
+                            <div class="side_text">
+                                <a>PLAY FREE</a>
+                                <a>PAGE 1</a>
+                                <a>PROCEED TO NEXT PAGE</a>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </section>
 
             <section id="about_page">
-                <div class="page_content reverse_colors">
-                    <div class="context_container">
-                        <div class="text_container_wrapper right">
-                            <div class="text_container">
-                                <a class="info_text">FFALLEN DOLL: OPERATION LOVECRAFT</a>
-                                <a class="heading">THIS IS FALLEN DOLL</a>
-                                <div class="compact_header_and_paragraph">
-                                    <div class="text_seperator">
-                                        <a class="header">YOU CHOOSE WHAT HAPPENS</a>
-                                        <a class="paragraph"><a class="info_text">A roguelike strategy game featuring squad tactics and deck building, paired with a real-time sexually explicit third person sandbox supporting up to 10 players on the same map. Command glamorous investigators as they battle (and bed) cultists & eldritch horrors from Cthulhu mythos.</a></a>
+                <div class="page_content hide_test" id="test">
+                    <div class="text_background">
+                        <a>OPERATION</a>
+                        <a>LOVECRAFT</a>
+                    </div>
+                    
+                    <div class="character_image_background animate_on_scroll from_right">
+                        <img src="img/alet.png">
+                    </div>
+
+                    <div class="info_container">
+                        <a class="teaser_text animate_on_scroll animate_with_order_delay" style="--animation-order: 1">FALLEN DOLL: OPERATION LOVECRAFT</a>
+                        <a class="title_text animate_on_scroll animate_with_order_delay" style="--animation-order: 2">THIS IS FALLEN DOLL</a>
+                        <div class="description_container">
+                            <a class="description_title animate_on_scroll animate_with_order_delay" style="--animation-order: 3">YOU CHOOSE WHAT HAPPENS</a>
+                            <a class="description_content animate_on_scroll animate_with_order_delay" style="--animation-order: 4">A roguelike strategy game featuring squad tactics and deck building, paired with a real-time sexually explicit third person sandbox supporting up to 10 players on the same map. Command glamorous investigators as they battle (and bed) cultists & eldritch horrors from Cthulhu mythos.</a>
+                        </div>
+
+                        <div class="button animate_on_scroll animate_with_order_delay" style="--animation-order: 5">
+                            <div class="outside"></div>
+                            <div class="inside"></div>
+                            <div class="text">
+                                <a>WATCH TRAILER</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="floating_effects">
+                        <div class="leftbound">
+                            <div class="side_text">
+                                <a>THIS IS FALLEN DOLL</a>
+                                <a>PAGE 2</a>
+                                <a>PROCEED TO NEXT PAGE</a>
+                            </div>
+                            <div class="page_lining">
+                                <div class="line"></div>
+                                <div class="blocks">
+                                    <div class="top_half">
+                                        <div class="block big"></div>
+                                        <div class="block"></div>
                                     </div>
-                                </div>             
-                                <div class="button" onclick='toggle_element("play_trailer", "none", "flex"); reload_embed("landing_video_embed")'>
-                                    <div class="text">
-                                        <a>LEARN THE GAME</a>
+                                    <div class="bottom_half">
+                                        <div class="block big"></div>
+                                        <div class="block"></div>
                                     </div>
                                 </div>
                             </div>
-                        </div>   
+                        </div>
+
+                        <div class="center">
+                            <div class="top_half  animate_on_scroll from_left">
+                                <div class="layer_small left">
+                                    <div class="line"></div>
+                                    <div class="blocks">
+                                        <div class="block"></div>
+                                        <div class="block big"></div>
+                                        <a>transition: all 1s cubic-bezier(0.9, 0, 0.1, 1)</a>
+                                    </div>
+                                </div>
+
+                                <div class="layer_big">
+                                    <div class="single_block_container half_left">
+                                        <div class="single_block"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="bottom_half animate_on_scroll from_right">
+                                <div class="layer_small single_block_seperator">
+                                    <div class="single_block_container center">
+                                        <div class="single_block"></div>
+                                    </div>
+                                    <div class="single_block_and_lines_seperator">
+                                        <div class="line"></div>
+                                        <div class="blocks">
+                                            <a>i am being forced to do this. send help.</a>
+                                            <div class="block big"></div>
+                                            <div class="block"></div>
+                                            <div class="block"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="layer_big">
+                                    <div class="text_container">
+                                        <div class="seperator"></div>
+
+                                        <div class="text">
+                                            <a>ALET</a>
+                                        </div>
+
+                                        <div class="single_block_container top">
+                                            <div class="single_block"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="rightbound">
+                            <div class="side_text">
+                                <a>THIS IS FALLEN DOLL</a>
+                                <a>PAGE 2</a>
+                                <a>PROCEED TO NEXT PAGE</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section id="operators_page" class="white">
+                <div class="page_content">
+                    <div class="text_background">
+                        <a>YOUR</a>
+                        <a>OPERATORS</a>
+                    </div>
+                    
+                    <div class="character_image_background animate_on_scroll from_left">
+                        <img src="img/erika.png">
+                    </div>
+
+                    <div class="info_container left">
+                        <a class="teaser_text animate_on_scroll animate_with_order_delay" style="--animation-order: 1">YOUR OPERATORS ARE READY</a>
+                        <a class="title_text animate_on_scroll animate_with_order_delay" style="--animation-order: 2">YOUR OPERATORS</a>
+                        <div class="description_container">
+                            <a class="description_title animate_on_scroll animate_with_order_delay" style="--animation-order: 3">YOUR JOURNEY, YOUR OPERATORS</a>
+                            <a class="description_content animate_on_scroll animate_with_order_delay" style="--animation-order: 4">It’s your journey,  Your adventure.You have three gorgeous operators to work with. Choose wisely. (why? i dont fucking know. ask Helius. He hasnt updated the game in two months and we dont know why)</a>
+                        </div>
+
+                        <div class="button animate_on_scroll animate_with_order_delay" style="--animation-order: 5">
+                            <div class="outside"></div>
+                            <div class="inside"></div>
+                            <div class="text">
+                                <a>MEET THE TEAM</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="floating_effects">
+                        <div class="leftbound">
+                            <div class="side_text">
+                                <a>YOUR OPERATORS</a>
+                                <a>PAGE 3</a>
+                                <a>PROCEED TO NEXT PAGE</a>
+                            </div>
+                            <div class="page_lining">
+                                <div class="line"></div>
+                                <div class="blocks">
+                                    <div class="top_half">
+                                        <div class="block big"></div>
+                                        <div class="block"></div>
+                                    </div>
+                                    <div class="bottom_half">
+                                        <div class="block big"></div>
+                                        <div class="block"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="center">
+                            <div class="top_half left animate_on_scroll from_right">
+                                <div class="layer_small right">
+                                    <div class="line"></div>
+                                    <div class="blocks">
+                                        <div class="block"></div>
+                                        <div class="block big"></div>
+                                        <a>transition: all 1s cubic-bezier(0.9, 0, 0.1, 1)</a>
+                                    </div>
+                                </div>
+
+                                <div class="layer_big">
+                                    <div class="single_block_container half_left">
+                                        <div class="single_block"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="bottom_half left animate_on_scroll from_left">
+                                <div class="layer_small right single_block_seperator">
+                                    <div class="single_block_and_lines_seperator">
+                                        <div class="line"></div>
+                                        <div class="blocks">
+                                            <a>i am being forced to do this. send help.</a>
+                                            <div class="block big"></div>
+                                            <div class="block"></div>
+                                            <div class="block"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="single_block_container center">
+                                        <div class="single_block"></div>
+                                    </div>
+                                </div>
+
+                                <div class="layer_big left">
+                                    <div class="text_container">
+                                        <div class="single_block_container top">
+                                            <div class="single_block"></div>
+                                        </div>
+
+                                        <div class="text">
+                                            <a>ERIKA</a>
+                                        </div>
+
+                                        <div class="seperator"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="rightbound">
+                            <div class="side_text">
+                                <a>YOUR OPERATORS</a>
+                                <a>PAGE 3</a>
+                                <a>PROCEED TO NEXT PAGE</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section id="platforms_page" class="video">
+                <div class="page_content">
+                    <div class="background_video">
+                        <video src="video/harem.mp4" autoplay muted loop></video>
+                        <div class="filter"></div>
+                    </div>
+
+                    <div class="info_container center">
+                        <a class="teaser_text animate_on_scroll animate_with_order_delay" style="--animation-order: 1">PLAY ON PC AND VR</a>
+                        <a class="title_text animate_on_scroll animate_with_order_delay" style="--animation-order: 2">DESKTOP & VR</a>
+                        <div class="description_container">
+                            <a class="description_content animate_on_scroll animate_with_order_delay" style="--animation-order: 3">Why play on a standard display? Instead, you can spend $400 on a VR headset and pass out from playing Fallen Doll for 20 hours straight. Get an oculus rift for $400 and never financially recover. Sounds like a good deal.</a>
+                        </div>
+
+                        <div class="button animate_on_scroll animate_with_order_delay" style="--animation-order: 4">
+                            <div class="outside"></div>
+                            <div class="inside"></div>
+                            <div class="text">
+                                <a>WASTE MONEY</a>
+                            </div>
+                        </div>
+
+                        <a class="tip animate_on_scroll animate_with_order_delay" style="--animation-order: 5">GET AN OCULUS RIFT FOR $400</a>
+                    </div>
+
+                    <div class="floating_effects">
+                        <div class="leftbound">
+                            <div class="side_text">
+                                <a>SPEND $400 ON HEADSET</a>
+                                <a>PAGE 4</a>
+                                <a>PROCEED TO NEXT PAGE</a>
+                            </div>
+                            <div class="page_lining">
+                                <div class="line"></div>
+                                <div class="blocks">
+                                    <div class="top_half">
+                                        <div class="block big"></div>
+                                        <div class="block"></div>
+                                    </div>
+                                    <div class="bottom_half">
+                                        <div class="block big"></div>
+                                        <div class="block"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="center">
+                            <div class="top_half  animate_on_scroll from_left">
+                                <div class="layer_small left">
+                                    <div class="line"></div>
+                                    <div class="blocks">
+                                        <div class="block"></div>
+                                        <div class="block big"></div>
+                                        <a>how to spend your savings on a $400 vr headset.</a>
+                                    </div>
+                                </div>
+
+                                <div class="layer_big">
+                                    <div class="single_block_container half_left">
+                                        <div class="single_block"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="bottom_half animate_on_scroll from_right">
+                                <div class="layer_small single_block_seperator">
+                                    <div class="single_block_container center">
+                                        <div class="single_block"></div>
+                                    </div>
+                                    <div class="single_block_and_lines_seperator">
+                                        <div class="line"></div>
+                                        <div class="blocks">
+                                            <a>helius skipped lunch for this.</a>
+                                            <div class="block big"></div>
+                                            <div class="block"></div>
+                                            <div class="block"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="rightbound">
+                            <div class="side_text">
+                                <a>SPEND $400 ON HEADSET</a>
+                                <a>PAGE 4</a>
+                                <a>PROCEED TO NEXT PAGE</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section id="patreon_page">
+                <div class="page_content">
+                    <div class="image_background">
+                        <img src="img/patreon.png" alt="">
+                    </div>
+
+                    <div class="info_container center">
+                        <a class="teaser_text animate_on_scroll animate_with_order_delay" style="--animation-order: 1">WE ARE BROKE</a>
+                        <a class="title_text animate_on_scroll animate_with_order_delay" style="--animation-order: 2">SUPPORT ON PATREON</a>
+                        <div class="description_container">
+                            <a class="description_content animate_on_scroll animate_with_order_delay" style="--animation-order: 3">Back this game on Patreon to help fund & get access to beta builds and Steam keys.</a>
+                        </div>
+
+                        <div class="button animate_on_scroll animate_with_order_delay" style="--animation-order: 4">
+                            <div class="outside"></div>
+                            <div class="inside"></div>
+                            <div class="text">
+                                <a>SUPPORT US</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="floating_effects">
+                        <div class="leftbound">
+                            <div class="side_text">
+                                <a>SUPPORT US</a>
+                                <a>PAGE 6</a>
+                                <a>PROCEED TO NEXT PAGE</a>
+                            </div>
+                            <div class="page_lining">
+                                <div class="line"></div>
+                                <div class="blocks">
+                                    <div class="top_half">
+                                        <div class="block big"></div>
+                                        <div class="block"></div>
+                                    </div>
+                                    <div class="bottom_half">
+                                        <div class="block big"></div>
+                                        <div class="block"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="center">
+                            <div class="top_half left animate_on_scroll from_right">
+                                <div class="layer_small right">
+                                    <div class="line"></div>
+                                    <div class="blocks">
+                                        <div class="block"></div>
+                                        <div class="block big"></div>
+                                        <a>please give us money</a>
+                                    </div>
+                                </div>
+
+                                <div class="layer_big">
+                                    <div class="single_block_container half_left">
+                                        <div class="single_block"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="bottom_half left animate_on_scroll from_left">
+                                <div class="layer_small right single_block_seperator">
+                                    <div class="single_block_and_lines_seperator">
+                                        <div class="line"></div>
+                                        <div class="blocks">
+                                            <a>give us money</a>
+                                            <div class="block big"></div>
+                                            <div class="block"></div>
+                                            <div class="block"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="single_block_container center">
+                                        <div class="single_block"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="rightbound">
+                            <div class="side_text">
+                                <a>SUPPORT US</a>
+                                <a>PAGE 6</a>
+                                <a>PROCEED TO NEXT PAGE</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section id="newsletter_page">
+                <div class="page_content">
+                    <div class="text_background">
+                        <a>FREE</a>
+                        <a>NEWSLETTER</a>
+                    </div>
+
+                    <div class="info_container center">
+                        <a class="teaser_text animate_on_scroll animate_with_order_delay" style="--animation-order: 1">OOOH NEWS</a>
+                        <a class="title_text animate_on_scroll animate_with_order_delay" style="--animation-order: 2">FREE NEWSLETTER</a>
+                        <div class="description_container">
+                            <a class="description_title animate_on_scroll animate_with_order_delay" style="--animation-order: 3">GET MONTHLY UPDATES</a>
+                            <a class="description_content animate_on_scroll animate_with_order_delay" style="--animation-order: 4">Subscribe for free to stay up to date with our development progress. Never miss a new monthly game update! ( Polls and NSFW posts are accessible to Patreon backers only )</a>
+                        </div>
+
+                        <div class="button animate_on_scroll animate_with_order_delay" style="--animation-order: 5">
+                            <div class="outside"></div>
+                            <div class="inside"></div>
+                            <div class="text">
+                                <a>SIGN UP</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="floating_effects">
+                        <div class="leftbound">
+                            <div class="side_text">
+                                <a>NEWSLETTER</a>
+                                <a>PAGE 5</a>
+                                <a>PROCEED TO NEXT PAGE</a>
+                            </div>
+                            <div class="page_lining">
+                                <div class="line"></div>
+                                <div class="blocks">
+                                    <div class="top_half">
+                                        <div class="block big"></div>
+                                        <div class="block"></div>
+                                    </div>
+                                    <div class="bottom_half">
+                                        <div class="block big"></div>
+                                        <div class="block"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="center">
+                            <div class="top_half left animate_on_scroll from_right">
+                                <div class="layer_small right">
+                                    <div class="line"></div>
+                                    <div class="blocks">
+                                        <div class="block"></div>
+                                        <div class="block big"></div>
+                                        <a>transition: all 1s cubic-bezier(0.9, 0, 0.1, 1)</a>
+                                    </div>
+                                </div>
+
+                                <div class="layer_big">
+                                    <div class="single_block_container half_left">
+                                        <div class="single_block"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="bottom_half left animate_on_scroll from_left">
+                                <div class="layer_small right single_block_seperator">
+                                    <div class="single_block_and_lines_seperator">
+                                        <div class="line"></div>
+                                        <div class="blocks">
+                                            <a>i am being forced to do this. send help.</a>
+                                            <div class="block big"></div>
+                                            <div class="block"></div>
+                                            <div class="block"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="single_block_container center">
+                                        <div class="single_block"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="rightbound">
+                            <div class="side_text">
+                                <a>NEWSLETTER</a>
+                                <a>PAGE 5</a>
+                                <a>PROCEED TO NEXT PAGE</a>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </section>
         </div>
-
-        <div class="fixed_layer">
-            <div class="navigator" id="navigator">
-                <div class="navigator_contents">
-                    <div class="logo_container">
-                        <svg width="100" height="70" viewBox="0 0 100 70" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M0.969297 58.1888C1.12374 58.1967 1.30478 58.2045 1.50148 58.2104C2.0921 58.2282 2.8502 58.2294 3.45266 58.1541C3.9119 58.0967 4.69105 57.8734 5.36372 57.2708C6.05353 56.6529 6.59122 55.6708 6.59122 54.1837C6.59122 52.6642 5.93021 51.6956 5.19694 51.1114C4.48544 50.5445 3.72069 50.3485 3.46108 50.3114C3.07486 50.2562 2.30423 50.2584 1.67501 50.2702C1.35069 50.2764 1.04817 50.2855 0.826888 50.2932C0.716174 50.297 0.625621 50.3004 0.562631 50.3029C0.531132 50.3042 0.506514 50.3052 0.489702 50.3059L0.463595 50.307L0 50.3271V64.9429H0.969297V58.1888ZM0.484648 50.7912L0.463595 50.307C0.463595 50.307 0.463595 50.307 0.484648 50.7912ZM0.969297 51.2582V57.2182C1.12811 57.2266 1.32014 57.2352 1.53058 57.2416C2.1122 57.259 2.80805 57.2578 3.33242 57.1923C3.64861 57.1527 4.22647 56.9882 4.71696 56.5489C5.19031 56.1248 5.62192 55.4106 5.62192 54.1837C5.62192 52.9892 5.11977 52.2892 4.59295 51.8695C4.04437 51.4324 3.45211 51.2892 3.32399 51.2709C3.03171 51.2292 2.3484 51.227 1.6933 51.2394C1.42568 51.2444 1.17266 51.2516 0.969297 51.2582Z"
-                                fill="white" />
-                            <path
-                                d="M46.5516 62.9372C46.9299 63.3212 47.4355 63.4883 47.8813 63.5525C48.1006 63.5841 48.2943 63.589 48.4322 63.586C48.5008 63.5846 48.5547 63.5811 48.5899 63.5783C48.6074 63.5769 48.6203 63.5756 48.6279 63.5748L48.6346 63.574C48.6346 63.574 48.6343 63.5741 48.6951 64.0543C48.756 64.5345 48.7556 64.5346 48.7556 64.5346L48.7552 64.5346L48.7522 64.535L48.7463 64.5357L48.741 64.5364L48.7278 64.5378C48.7126 64.5394 48.6918 64.5415 48.6659 64.5436C48.6141 64.5478 48.5415 64.5523 48.4525 64.5542C48.2751 64.558 48.0284 64.5518 47.7473 64.5113C47.1925 64.4314 46.4576 64.2113 45.8769 63.622C45.457 63.1958 45.2605 62.6644 45.1661 62.2675C45.118 62.0655 45.094 61.888 45.0819 61.7598C45.0758 61.6954 45.0727 61.6427 45.071 61.6047L45.0704 61.5885L45.0699 61.575L45.0698 61.5683L45.0695 61.5587L45.0694 61.5505L45.0693 61.5445L45.0693 61.5398L45.0693 61.5379V61.5369C45.0693 61.5369 45.0693 61.5365 45.5464 61.5365H45.0693V56.3161H43.4245V55.3468H45.0693V52.1454H46.0234L46.0234 55.3468H48.6587V56.3161H46.0234V61.535L46.0235 61.5386C46.0236 61.5416 46.0237 61.5462 46.0239 61.5523L46.0243 61.5626C46.0253 61.5855 46.0273 61.6213 46.0317 61.6674C46.0405 61.76 46.0582 61.8913 46.0936 62.0403C46.1662 62.3455 46.3036 62.6855 46.5516 62.9372Z"
-                                fill="white" />
-                            <path
-                                d="M37.9112 56.9797C39.2325 55.3545 41.0402 55.3468 43.0368 55.3468V56.3161C40.9623 56.3161 39.6527 56.3742 38.6633 57.5912C38.3321 57.9984 38.1251 58.3478 37.9961 58.7103C37.867 59.0732 37.8065 59.4762 37.8026 60.0031C37.7981 60.5915 37.868 61.0503 38.0241 61.4576C38.1798 61.8638 38.4324 62.2479 38.8331 62.6711C39.7953 63.6878 40.9071 63.686 42.7318 63.6831C42.8313 63.683 42.9329 63.6828 43.0368 63.6828V64.6521C42.9012 64.6521 42.7666 64.6527 42.6331 64.6534L42.6325 64.6534C40.9252 64.6614 39.3891 64.6687 38.1291 63.3374C37.6647 62.8468 37.331 62.3576 37.119 61.8045C36.9074 61.2523 36.8282 60.6656 36.8333 59.9958C36.8378 59.3973 36.907 58.8799 37.0829 58.3854C37.259 57.8906 37.5323 57.4457 37.9112 56.9797Z"
-                                fill="white" />
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M31.0175 63.7797C32.8736 63.7797 34.4173 62.4419 34.737 60.678H35.7189C35.3897 62.9797 33.4102 64.749 31.0175 64.749C28.3944 64.749 26.2679 62.6226 26.2679 59.9995C26.2679 57.3764 28.3944 55.2499 31.0175 55.2499C33.6406 55.2499 35.767 57.3764 35.767 59.9995C35.767 60.0971 35.7641 60.1941 35.7583 60.2903H27.2482C27.3967 62.2422 29.0275 63.7797 31.0175 63.7797ZM27.268 59.5148C27.5059 57.6559 29.0939 56.2192 31.0175 56.2192C32.9411 56.2192 34.5291 57.6559 34.767 59.5148H27.268Z"
-                                fill="white" />
-                            <path
-                                d="M24.3293 52.7297C24.3293 53.0509 24.069 53.3113 23.7478 53.3113C23.4266 53.3113 23.1662 53.0509 23.1662 52.7297C23.1662 52.4085 23.4266 52.1482 23.7478 52.1482C24.069 52.1482 24.3293 52.4085 24.3293 52.7297Z"
-                                fill="white" />
-                            <path
-                                d="M21.2789 68.6086C21.7318 68.5444 22.2453 68.377 22.6296 67.9927C22.8816 67.7408 23.0212 67.4004 23.0949 67.0949C23.1309 66.9457 23.1489 66.8144 23.1578 66.7216C23.1622 66.6755 23.1643 66.6396 23.1653 66.6168L23.1657 66.6064L23.166 66.5993L23.1661 66.5928L23.1662 66.5891V55.0561H24.1355V66.5907H23.6508C24.1355 66.5907 24.1355 66.591 24.1355 66.591L24.1355 66.5921L24.1355 66.5939L24.1354 66.5987L24.1354 66.6047L24.1352 66.6129C24.135 66.6244 24.1345 66.6398 24.1337 66.6589C24.132 66.697 24.1288 66.7497 24.1227 66.8141C24.1104 66.9425 24.086 67.1201 24.0371 67.3223C23.9412 67.7196 23.7416 68.2516 23.315 68.6781C22.7252 69.268 21.9787 69.4883 21.415 69.5683C21.1295 69.6088 20.8789 69.6151 20.6986 69.6112C20.6082 69.6093 20.5345 69.6048 20.4819 69.6006C20.4555 69.5985 20.4344 69.5965 20.419 69.5948C20.4113 69.594 20.405 69.5933 20.4002 69.5927L20.3942 69.592L20.3911 69.5916L20.3907 69.5916C20.3907 69.5916 20.3904 69.5915 20.4522 69.1109C20.5139 68.6302 20.5136 68.6301 20.5136 68.6301L20.5205 68.6309C20.5244 68.6313 20.5296 68.6318 20.5362 68.6324C20.5426 68.633 20.5503 68.6337 20.5591 68.6344C20.5948 68.6372 20.6496 68.6407 20.7193 68.6421C20.8593 68.6451 21.0561 68.6402 21.2789 68.6086Z"
-                                fill="white" />
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M21.4215 59.9995C21.4215 62.6226 19.295 64.749 16.6719 64.749C14.0488 64.749 11.9223 62.6226 11.9223 59.9995C11.9223 57.3764 14.0488 55.2499 16.6719 55.2499C19.295 55.2499 21.4215 57.3764 21.4215 59.9995ZM20.4522 59.9995C20.4522 62.0872 18.7597 63.7797 16.6719 63.7797C14.5841 63.7797 12.8916 62.0872 12.8916 59.9995C12.8916 57.9117 14.5841 56.2192 16.6719 56.2192C18.7597 56.2192 20.4522 57.9117 20.4522 59.9995Z"
-                                fill="white" />
-                            <path
-                                d="M9.84181 56.9496C10.2261 56.5653 10.7396 56.398 11.1925 56.3337C11.4153 56.3022 11.6121 56.2972 11.7522 56.3002C11.8219 56.3017 11.8766 56.3051 11.9123 56.308C11.9302 56.3094 11.9432 56.3107 11.9509 56.3115L11.9578 56.3122C11.9578 56.3122 11.9575 56.3122 12.0193 55.8315C12.0811 55.3508 12.0807 55.3507 12.0807 55.3507L12.0795 55.3506L12.0773 55.3503L12.0712 55.3496C12.0664 55.349 12.0601 55.3483 12.0524 55.3475C12.037 55.3459 12.0159 55.3438 11.9896 55.3417C11.9369 55.3375 11.8633 55.333 11.7728 55.3311C11.5926 55.3273 11.342 55.3336 11.0564 55.3741C10.4928 55.454 9.74624 55.6744 9.15641 56.2642C8.72986 56.6908 8.53018 57.2228 8.43429 57.62C8.38548 57.8222 8.36107 57.9998 8.34876 58.1282C8.34259 58.1926 8.33939 58.2454 8.33773 58.2835C8.3369 58.3025 8.33646 58.318 8.33622 58.3295L8.33607 58.3378L8.336 58.3437L8.33596 58.3484L8.33595 58.3503L8.33595 58.351L8.33595 58.3513C8.33595 58.3513 8.33595 58.3517 8.8206 58.3517H8.33595V64.9429H9.30525V58.3532L9.30531 58.3496C9.3054 58.3451 9.30562 58.337 9.30611 58.3256C9.30711 58.3027 9.30921 58.2668 9.31364 58.2207C9.32253 58.128 9.34053 57.9966 9.37653 57.8474C9.45027 57.542 9.58984 57.2016 9.84181 56.9496Z"
-                                fill="white" />
-                            <path
-                                d="M55.2499 50.4034V64.9429H56.2192V57.2854H63.6828V64.9429H64.6521V50.4034H63.6828V56.3161H56.2192V50.4034H55.2499Z"
-                                fill="white" />
-                            <path d="M78.3192 50.4034V64.9429H79.2885V50.4034H78.3192Z" fill="white" />
-                            <path
-                                d="M82.8749 52.7297C82.8749 53.0509 82.6145 53.3113 82.2933 53.3113C81.9721 53.3113 81.7117 53.0509 81.7117 52.7297C81.7117 52.4085 81.9721 52.1482 82.2933 52.1482C82.6145 52.1482 82.8749 52.4085 82.8749 52.7297Z"
-                                fill="white" />
-                            <path d="M81.9056 64.9429H82.8749V55.056H81.9056V64.9429Z" fill="white" />
-                            <path
-                                d="M92.415 57.354C92.4287 58.6643 92.4288 60.2988 92.3735 61.5714C92.3183 62.8413 91.7526 63.6643 91.0016 64.1503C90.2775 64.6187 89.423 64.749 88.7876 64.749C88.2091 64.749 87.396 64.6461 86.7013 64.183C85.9777 63.7006 85.4497 62.872 85.3954 61.5705C85.3464 60.394 85.3466 58.7597 85.3587 57.4264C85.3648 56.7583 85.3739 56.1632 85.3815 55.7351C85.3853 55.521 85.3887 55.3486 85.3912 55.2296L85.3952 55.0448C85.3952 55.0448 85.3952 55.0448 85.8797 55.056C86.3642 55.0673 86.3642 55.0675 86.3642 55.0675L86.3631 55.1141C86.3624 55.145 86.3615 55.1907 86.3602 55.2497C86.3578 55.3678 86.3544 55.5392 86.3506 55.7522C86.3431 56.1783 86.334 56.7706 86.3279 57.4352C86.3158 58.7675 86.316 60.3804 86.3639 61.5302C86.4066 62.555 86.7994 63.0834 87.239 63.3765C87.7074 63.6888 88.2998 63.7797 88.7876 63.7797C89.3153 63.7797 89.9631 63.6677 90.475 63.3365C90.9598 63.0228 91.3634 62.4888 91.4051 61.5293C91.4593 60.2841 91.4594 58.6714 91.4457 57.3641C91.4389 56.7117 91.4287 56.1376 91.4202 55.7268C91.4159 55.5214 91.4121 55.3568 91.4093 55.2437C91.4079 55.1871 91.4068 55.1434 91.406 55.1139L91.4049 55.07L91.4048 55.0694C91.4048 55.0694 91.4048 55.0694 91.8893 55.056C92.3738 55.0427 92.3738 55.0429 92.3738 55.0429L92.3738 55.0435L92.375 55.0887C92.3758 55.1187 92.3769 55.1629 92.3783 55.22C92.3811 55.3342 92.385 55.4999 92.3893 55.7067C92.3978 56.1201 92.4081 56.6975 92.415 57.354Z"
-                                fill="white" />
-                            <path
-                                d="M97.1235 55.153C95.7827 55.153 94.5148 55.9704 94.317 57.4135C94.2473 57.9227 94.3348 58.3598 94.5527 58.7301C94.7641 59.0896 95.0768 59.3493 95.3951 59.551C95.7073 59.7489 96.0586 59.9112 96.3735 60.0566L96.3853 60.062C96.7162 60.2149 97.007 60.3499 97.251 60.5053C97.8155 60.8644 98.0965 61.0443 98.2664 61.2519C98.3987 61.4137 98.4847 61.624 98.4805 62.1279C98.4764 62.6283 98.3018 63.0306 98.0094 63.3087C97.7163 63.5876 97.2644 63.7797 96.6389 63.7797C95.9034 63.7797 95.3488 63.5856 94.9825 63.3972C94.7987 63.3027 94.662 63.2094 94.5741 63.1425C94.5302 63.1092 94.4987 63.0825 94.4798 63.0659C94.4704 63.0575 94.4641 63.0517 94.461 63.0488L94.4611 63.049C94.4611 63.049 94.4614 63.0493 94.1187 63.392C93.776 63.7347 93.7763 63.735 93.7763 63.735L93.7767 63.7354L93.7774 63.7361L93.7792 63.7379L93.7837 63.7423C93.7872 63.7457 93.7916 63.7498 93.7968 63.7548C93.8073 63.7647 93.8214 63.7776 93.839 63.7931C93.8742 63.8241 93.9237 63.8657 93.9874 63.9141C94.1145 64.0108 94.2989 64.1356 94.5392 64.2592C95.021 64.507 95.7265 64.749 96.6389 64.749C97.4673 64.749 98.1735 64.4905 98.6775 64.011C99.1823 63.5307 99.4438 62.8668 99.4498 62.1359C99.4549 61.5105 99.3471 61.0423 99.0167 60.6383C98.7437 60.3045 98.3338 60.0444 97.8731 59.7521L97.7714 59.6875C97.4679 59.4944 97.1219 59.3346 96.8095 59.1903L96.7917 59.1821C96.4617 59.0296 96.1662 58.8922 95.914 58.7323C95.6639 58.5738 95.4914 58.4142 95.3881 58.2386C95.2912 58.0738 95.2343 57.8598 95.2774 57.5451C95.3942 56.6922 96.1469 56.1223 97.1235 56.1223C97.602 56.1223 98.0584 56.2835 98.4092 56.4588C98.5818 56.5451 98.7219 56.6314 98.8175 56.6952C98.8652 56.7269 98.9014 56.7528 98.9246 56.7699L98.9306 56.7744C98.9391 56.7807 98.9453 56.7855 98.9493 56.7885L98.9534 56.7917C98.9534 56.7917 98.9532 56.7915 99.256 56.4131C99.5587 56.0346 99.5585 56.0344 99.5585 56.0344L99.5582 56.0342L99.5577 56.0338L99.5563 56.0327L99.5524 56.0296C99.5493 56.0272 99.5452 56.024 99.5403 56.0202C99.5304 56.0126 99.5167 56.0022 99.4995 55.9896C99.4652 55.9643 99.4165 55.9296 99.3552 55.8886C99.2327 55.807 99.0578 55.6994 98.8427 55.5919C98.418 55.3795 97.8081 55.153 97.1235 55.153Z"
-                                fill="white" />
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M75.4475 60.678C75.1278 62.4419 73.5841 63.7797 71.7279 63.7797C69.738 63.7797 68.1072 62.2422 67.9587 60.2902H76.4687C76.4745 60.1941 76.4775 60.0971 76.4775 59.9995C76.4775 57.3763 74.3511 55.2499 71.7279 55.2499C69.1048 55.2499 66.9784 57.3763 66.9784 59.9995C66.9784 62.6226 69.1048 64.749 71.7279 64.749C74.1207 64.749 76.1002 62.9797 76.4294 60.678H75.4475ZM71.7279 56.2192C69.8044 56.2192 68.2164 57.6559 67.9785 59.5148H75.4774C75.2395 57.6559 73.6515 56.2192 71.7279 56.2192Z"
-                                fill="white" />
-                            <path
-                                d="M48.2846 44.152C48.7508 43.2384 49.2654 42.1805 49.6861 41.275C59.0321 39.8885 66.2029 31.8317 66.2029 22.1C66.2029 18.7267 65.3414 15.5547 63.8263 12.7919C64.3429 11.7146 64.8152 10.7275 65.2261 9.86804C67.558 13.3706 68.917 17.5766 68.917 22.1C68.917 33.8123 59.8059 43.3966 48.2846 44.152Z"
-                                fill="white" />
-                            <path
-                                d="M46.817 2.71403C42.5691 2.71403 38.6403 4.08029 35.4461 6.39736H31.2659C35.2591 2.44248 40.7528 0 46.817 0C52.8812 0 58.3749 2.44248 62.3681 6.39736H58.1879C54.9937 4.08029 51.0649 2.71403 46.817 2.71403Z"
-                                fill="white" />
-                            <path
-                                d="M28.5652 9.635L29.9853 12.4752C28.3601 15.3111 27.4311 18.597 27.4311 22.1C27.4311 31.9055 34.7111 40.0107 44.161 41.3054C44.7001 42.3236 45.2483 43.3307 45.7185 44.1731C34.0233 43.6006 24.717 33.9371 24.717 22.1C24.717 17.4758 26.1372 13.1834 28.5652 9.635Z"
-                                fill="white" />
-                            <path
-                                d="M38.9657 29.3697L27.7219 6.882H40.5166C40.5166 6.882 37.8238 9.7872 37.8995 10.4684C37.9964 11.3408 38.6749 13.5702 39.7411 13.5702C39.7739 13.5702 39.7945 13.4072 39.8283 13.14C39.9945 11.8259 40.4796 7.99053 44.2968 8.62674C44.4317 8.64922 44.5789 8.67203 44.7364 8.69645C47.2954 9.09315 52.5972 9.91503 52.7297 16.6719C52.8028 20.398 50.0673 20.7098 48.8817 20.8449C48.4943 20.8891 48.2724 20.9144 48.3679 21.0337C49.3408 22.25 51.9543 22.7785 51.9543 22.7785C51.9543 22.7785 56.2192 24.0386 56.2192 15.0241C56.2192 10.2736 50.2095 6.882 50.2095 6.882H66.106C66.106 6.882 53.0205 34.41 51.6635 36.1548C50.7667 37.3077 48.9864 34.7822 49.2402 33.3438C49.3267 32.8536 49.7142 32.1373 50.1493 31.3329C51.1768 29.4334 52.47 27.0426 50.6942 25.9771C48.9495 24.9303 42.649 30.5328 42.649 30.5328C42.649 30.5328 45.2661 26.171 47.4955 17.7381C47.8832 12.9886 43.0367 13.1824 43.0367 13.1824C43.0367 13.1824 43.8122 15.218 43.7153 16.7688C43.553 19.3646 43.0523 21.9471 41.7979 24.2255L38.9657 29.3697Z"
-                                fill="white" />
-                            <path
-                                d="M44.0111 34.1206C43.8169 34.3287 43.6998 34.4543 43.5627 34.5517C43.3543 34.6998 43.0999 34.783 42.4589 34.9926C42.292 35.0472 42.0989 35.1104 41.8736 35.1855C41.393 35.3457 46.817 45.2661 47.0109 45.2661C47.3017 45.2661 50.5567 38.5374 50.4034 38.3841C50.3379 38.3187 50.111 38.2755 49.8041 38.2171C49.2021 38.1026 48.2924 37.9296 47.6894 37.4148C46.8894 36.732 46.4222 36.0919 46.1385 34.9916C46.0017 34.4609 46.0582 33.7349 46.1045 33.1402C46.1477 32.5848 46.182 32.1439 46.0416 32.0837C45.8946 32.0207 45.7339 32.2034 45.2401 32.765C44.9743 33.0673 44.6118 33.4795 44.103 34.0223C44.0704 34.057 44.0399 34.0897 44.0111 34.1206Z"
-                                fill="white" />
-                        </svg>
-                    </div>
-
-                    <div class="hyperlinks_container">
-                        <a class="active">Home</a>
-                        <a>Fallen Doll</a>
-                        <a>About Us</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="video_player" style="display: none;" id="play_trailer">
-                <iframe src="http://www.youtube.com/embed/0okiavtqYMY" frameborder="0" id="landing_video_embed"></iframe>
-
-                <div class="exit_player"
-                    onclick='toggle_element("play_trailer", "none", "flex"); reload_embed("landing_video_embed")'>
-                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M13.5858 18.5858C14.3668 19.3668 14.3668 20.6332 13.5858 21.4142L1.41421 33.5858C0.633165 34.3668 0.633166 35.6332 1.41421 36.4142L3.58579 38.5858C4.36683 39.3668 5.63317 39.3668 6.41421 38.5858L18.5858 26.4142C19.3668 25.6332 20.6332 25.6332 21.4142 26.4142L33.5858 38.5858C34.3668 39.3668 35.6332 39.3668 36.4142 38.5858L38.5858 36.4142C39.3668 35.6332 39.3668 34.3668 38.5858 33.5858L26.4142 21.4142C25.6332 20.6332 25.6332 19.3668 26.4142 18.5858L38.5858 6.41421C39.3668 5.63316 39.3668 4.36683 38.5858 3.58578L36.4142 1.41421C35.6332 0.633165 34.3668 0.633166 33.5858 1.41421L21.4142 13.5858C20.6332 14.3668 19.3668 14.3668 18.5858 13.5858L6.41421 1.41421C5.63316 0.633165 4.36683 0.633166 3.58578 1.41421L1.41421 3.58579C0.633165 4.36683 0.633166 5.63317 1.41421 6.41421L13.5858 18.5858Z"
-                            fill="white" />
-                    </svg>
-                </div>
-            </div>
-
-            <div class="scroll_icon">
-                <svg width="24" height="99" viewBox="0 0 24 99" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M12 9C10.3431 9 9 10.3431 9 12V16C9 17.6569 10.3431 19 12 19C13.6569 19 15 17.6569 15 16V12C15 10.3431 13.6569 9 12 9Z"
-                        fill="white" />
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M12 0C5.37258 0 0 5.37258 0 12V28C0 34.6274 5.37258 40 12 40C18.6274 40 24 34.6274 24 28V12C24 5.37258 18.6274 0 12 0ZM20 28V12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12V28C4 32.4183 7.58172 36 12 36C16.4183 36 20 32.4183 20 28Z"
-                        fill="white" />
-                    <path class="arrow"
-                        d="M10.7071 56.5858H12.7071V79.1716L19 72.8787L20.4142 74.2929L11.7071 83L3 74.2929L4.41418 72.8787L10.7071 79.1716V56.5858Z"
-                        fill="white" />
-                </svg>
-            </div>
-
-        </div>
-
     </div>
 
-    <script src="js/toggle_element.js"></script>
     <script src="js/scroll.js"></script>
-    <script src="js/navigator.js"></script>
+    <script src="js/page.js"></script>
 </body>
 
 </html>

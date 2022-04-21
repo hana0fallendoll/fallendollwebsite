@@ -1,0 +1,53 @@
+.steam_game_link {
+    width: 520px;
+    height: 250px;
+
+    background-color: #171a21;
+    position: relative;
+    display: grid;
+    grid-template-rows: 70% 30%;
+}
+
+.steam_game_link .banner {
+    background-image: url("../img/steam_banner.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 520px;
+}
+
+.steam_game_link .info_container {
+    display: grid;
+    grid-template-columns: 75% 25%;
+    max-width: 520px;
+}
+
+.steam_game_link .info_container .title {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+
+    padding-left: 8%;
+}
+
+.steam_game_link .info_container .title a {
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    font-family: "Montserrat Bold";
+}
+
+.steam_game_link .info_container .pricing {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.steam_game_link .info_container .pricing a {
+    font-size: 14px;
+    text-decoration: none;
+    color: white;
+    background-color: #75ce22;
+    padding: 8px 25px 8px 25px;
+    font-family: "Montserrat Semi Bold";
+}

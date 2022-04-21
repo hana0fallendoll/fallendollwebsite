@@ -1,8 +1,4 @@
-let fallendoll = document.getElementById("fallendoll") // gets the fallen doll landing page.
-let fallen_doll_fade_elements = fallendoll.getElementsByClassName("fade") // gets the fade element within it.
-let fallen_doll_fade_element = fallen_doll_fade_elements[0] // gets the first fade element
-
-let pages_id = ["fallendoll", "trailer_page", "about_page"]
+let pages_id = ["landing_page", "about_page", "operators_page", "platforms_page", "patreon_page", "newsletter_page"]
 
 let pages = []
 
@@ -18,14 +14,15 @@ window.onresize = resize
 
 let current_page = 0
 
-fallen_doll_fade_element.style.opacity = 0;
-
 let scrolled = 0
 function scroll_page(event) {
+    let direction = event.deltaY
+    
+    if (current_page == 0 && direction < 0) return
+    if (current_page == pages.length - 1 && direction > 0) return
+
     if (scrolled == 1) return
     scrolled = 1
-
-    let direction = event.deltaY
 
     scroll(direction)
 
@@ -35,19 +32,14 @@ function scroll_page(event) {
 }
 
 function scroll(direction) {
-    if (current_page == 0 && direction < 0) return
-
-    if (current_page == pages.length - 1 && direction > 0) return
-
     direction == 100 ?
         current_page++
         : current_page--
 
     pages[current_page].scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"})
 
-    current_page == 2 ?
-        navigator_switch_theme(true)
-        : navigator_switch_theme(false)
+    if(current_page == 0) return
+    animation_test(pages_id[current_page])
 }
 
 function resize() {
@@ -73,4 +65,3 @@ window.addEventListener("keydown", (e) => {
 window.addEventListener("mousedown", (e) => {
     if(e.buttons == 4) e.preventDefault()
 })
-

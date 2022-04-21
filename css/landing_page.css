@@ -1,0 +1,72 @@
+#landing_page .title {
+    width: 60vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex-direction: column;
+}
+
+#landing_page .title img {
+    width: 100%;
+    aspect-ratio: 2.3/1;
+}
+
+#landing_page .title .game_link {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.game_link .get_button {
+    background-color: #ffffff00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+    width: 250px;
+    height: 48px;
+    position: relative;
+
+    user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -ms-touch-select: none;
+
+    -webkit-transition: all 150ms 0s ease-in-out;
+    -moz-transition: all 150ms 0s ease-in-out;
+    -o-transition: all 150ms 0s ease-in-out;
+    transition: all 150ms 0s ease-in-out;
+
+    clip-path: polygon(0 0, 92% 0, 100% 26%, 100% 100%, 8% 100%, 0% 76%);
+    color: #FFFFFF;
+
+    border: 4px solid #FFFFFF;
+}
+
+.game_link .get_button:hover {
+    background-color: #ffffff;
+
+    color: #000000;
+}
+
+.game_link .get_button:active {
+    -webkit-transition: all 50ms 0s ease-in-out;
+    -moz-transition: all 50ms 0s ease-in-out;
+    -o-transition: all 50ms 0s ease-in-out;
+    transition: all 50ms 0s ease-in-out;
+
+    transform: scale(95%);
+    color: #000000;
+}
+
+.game_link .get_button .text a {
+    font-family: "Montserrat Bold";
+    font-size: 14px;
+}

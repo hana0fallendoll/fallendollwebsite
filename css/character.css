@@ -1,0 +1,66 @@
+.character_image_background {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: right;
+    position: absolute;
+    z-index: 2;
+
+    transition: all 1s 0s cubic-bezier( 0.9, 0, 0.1, 1);
+    overflow-y: hidden;
+}
+
+.character_image_background.from_left {
+    justify-content: left;
+}
+
+.character_image_background img {
+    height: 101vh;
+    margin-right: 7vw;
+    margin-top: 1vh;
+    position: absolute;
+    object-fit: contain;
+
+    animation: infinite 6s ease-in-out floating;
+    animation-delay: 4s;
+}
+
+@media only screen and (max-width: 600px) {
+    .character_image_background {
+        justify-content: center;
+    }
+}
+
+.text_background {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: 1;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+.text_background a {
+    position: relative;
+    font-family: "Montserrat Black";
+    font-size: calc(12vw + 12vh);
+    line-height: 75.9%;
+
+    letter-spacing: -1px;
+
+    --stroke-color: var(--foreground);
+    --stroke-width: 1px;
+    
+    text-shadow: 
+        var(--stroke-width) 0 0 var(--stroke-color),
+        calc(var(--stroke-width) * -1) 0 0 var(--stroke-color),
+        0 var(--stroke-width) 0 var(--stroke-color),
+        0 calc(var(--stroke-width) * -1) 0 var(--stroke-color);
+
+    color: var(--background);
+
+    opacity: 0.2;
+}

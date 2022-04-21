@@ -1,71 +1,60 @@
 .navigator {
-    width: 100%;
-    height: 100px;
-
-    /* Follow page, follow when scroll */
     position: fixed;
-
-    /* Stay On Top Of Video Background */
-    z-index: 200;
-
     top: 0px;
-
-    -webkit-transition: all 350ms 0s ease-in-out;
-    -moz-transition: all 350ms 0s ease-in-out;
-    -o-transition: all 350ms 0s ease-in-out;
-    transition: all 350ms 0s ease-in-out;
-}
-
-/* Grouping all Navigator components */
-
-.navigator .navigator_contents {
+    left: 0px;
     width: 100%;
-    height: 100%;
-
-    display: grid;
-
-    /* Logo Will Take Up 100px, hyperlinks will take up rest of space */
-    grid-template-columns: 100px auto;
-
-    /* Align items to the center, vertically */
+    height: 45px;
+    background-color: #7c7c7c4b;
+    z-index: 5000;
+    font-family: "Montserrat Regular";
+    display: flex;
+    justify-content: center;
     align-items: center;
-}
-
-/* Container of Logo */
-
-.navigator .navigator_contents .logo_container {
-    /* Move logo to the right by 20px */
-    margin-left: 20px;
-
-    width: 100px;
-    height: 70px;
-}
-
-/* Container of Hyperlinks */
-
-.navigator .navigator_contents .hyperlinks_container {
-    /* Align all text to riht */
-    text-align: right;
-
-    /* Move all text to left by 30px */
-    margin-right: 30px;
-
-    font-size: 20px;
-}
-
-.navigator .navigator_contents .hyperlinks_container a {
-    /* All hyperlinks are 80px apart from each other. 40px left & right = 80px */
-    margin: 0px 40px 0px 40px;
-
-    color: white;
-    font-family: "Exo Regular";
-}
-
-.navigator .navigator_contents .hyperlinks_container a.active {
-    font-family: "Exo Bold";
     color: #ffffff;
+    border-bottom: 1px solid #7c7c7c4b;
+    box-sizing: border-box;
+    user-select: none;
+    z-index: 500000;
+    pointer-events: all;
 }
 
-.navigator.dark {
-    background-color: black;
+.navigator.patreon {
+    background-color: #15141A;
+}
+
+.navigator p {
+    margin: 0px 4px 0px 4px;
+    text-shadow: 0px 0px 5px #000000;
+    font-size: 16px;
+    padding: 5px 10px 5px 10px;
+    border-radius: 6px;
+
+    transition: 80ms ease-in-out;
+    pointer-events: all;
+}
+
+.navigator p:hover {
+    background-color: #f0f8ff44;
+}
+
+.navigator svg {
+    margin-left: 10px;
+}
+
+.navigator .seperator {
+    flex: 1;
+}
+
+@media only screen and (max-width: 900px) {
+    .navigator p {
+        font-size: 14px;
+    }
+
+    .navigator svg {
+        display: none;
+    }
+
+    .navigator .seperator {
+        display: none;
+    }
 }
