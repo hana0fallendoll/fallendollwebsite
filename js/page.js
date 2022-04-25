@@ -1,3 +1,15 @@
+const consent_cookie = "projecth_cookies"
+
+const show_popup = () => !localStorage.getItem(consent_cookie)
+const save_cookie = () => localStorage.setItem(consent_cookie, true)
+const popup = document.getElementsByClassName("cookies")
+
+window.onload = () => {
+    if(show_popup()) {
+        popup[0].style.display = "flex"
+    }
+}
+
 let animation_queue = []
 
 function animation_test(page_id) {
