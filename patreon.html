@@ -9,9 +9,11 @@
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/patreon.css">
     <link rel="stylesheet" href="css/navigator.css">
+    <link rel="stylesheet" href="css/rewards.css">
 </head>
 
 <body>
+
     <div class="page visible" id="home_page">
         <div class="logo">
             <img src="img/logo.png" alt="">
@@ -22,15 +24,23 @@
         <p>This webpage is separate from the landing page and is for Patreon supporters.</p>
 
         <div class="br"></div>
-        <div class="br"></div>
 
-        <div class="button">
-            <div class="outside"></div>
-            <div class="inside"></div>
-            <div class="text">
-                <a>CLAIM STEAM KEY</a>
-            </div>
-        </div>
+        <svg width="263" height="69" viewBox="0 0 263 69" fill="none" xmlns="http://www.w3.org/2000/svg" id="claim_button">
+            <path d="M12 6H256V55H249V62H6V12H12V6Z" fill="white" class="background"/>
+            <path d="M256 56H250V62H256V56Z" fill="white"/>
+
+            <path d="M91.1646 40.192C90.3006 40.192 89.4952 40.0533 88.7486 39.776C88.0126 39.488 87.3726 39.0827 86.8286 38.56C86.2846 38.0373 85.8579 37.424 85.5486 36.72C85.2499 36.016 85.1006 35.2427 85.1006 34.4C85.1006 33.5573 85.2499 32.784 85.5486 32.08C85.8579 31.376 86.2846 30.7627 86.8286 30.24C87.3832 29.7173 88.0286 29.3173 88.7646 29.04C89.5006 28.752 90.3059 28.608 91.1806 28.608C92.1512 28.608 93.0259 28.7787 93.8046 29.12C94.5939 29.4507 95.2552 29.9413 95.7886 30.592L94.1246 32.128C93.7406 31.6907 93.3139 31.3653 92.8446 31.152C92.3752 30.928 91.8632 30.816 91.3086 30.816C90.7859 30.816 90.3059 30.9013 89.8686 31.072C89.4312 31.2427 89.0526 31.488 88.7326 31.808C88.4126 32.128 88.1619 32.5067 87.9806 32.944C87.8099 33.3813 87.7246 33.8667 87.7246 34.4C87.7246 34.9333 87.8099 35.4187 87.9806 35.856C88.1619 36.2933 88.4126 36.672 88.7326 36.992C89.0526 37.312 89.4312 37.5573 89.8686 37.728C90.3059 37.8987 90.7859 37.984 91.3086 37.984C91.8632 37.984 92.3752 37.8773 92.8446 37.664C93.3139 37.44 93.7406 37.104 94.1246 36.656L95.7886 38.192C95.2552 38.8427 94.5939 39.3387 93.8046 39.68C93.0259 40.0213 92.1459 40.192 91.1646 40.192ZM97.5389 40V28.8H100.131V37.888H105.747V40H97.5389ZM105.786 40L110.778 28.8H113.338L118.346 40H115.626L111.53 30.112H112.554L108.442 40H105.786ZM108.282 37.6L108.97 35.632H114.73L115.434 37.6H108.282ZM119.508 40V28.8H122.1V40H119.508ZM124.758 40V28.8H126.902L131.67 36.704H130.534L135.222 28.8H137.35L137.382 40H134.95L134.934 32.528H135.382L131.638 38.816H130.47L126.646 32.528H127.19V40H124.758ZM146.89 37.44L146.746 34.448L152.106 28.8H154.986L150.154 34L148.714 35.536L146.89 37.44ZM144.57 40V28.8H147.146V40H144.57ZM152.234 40L148.25 35.12L149.946 33.28L155.258 40H152.234ZM158.798 33.312H164.19V35.328H158.798V33.312ZM158.99 37.92H165.086V40H156.414V28.8H164.878V30.88H158.99V37.92ZM169.823 40V35.424L170.415 36.992L165.487 28.8H168.239L172.015 35.088H170.431L174.223 28.8H176.767L171.839 36.992L172.415 35.424V40H169.823Z" fill="black"/>
+            
+            <path d="M133.5 68H206V67H133.5V68Z" fill="white" fill-opacity="0.24" class="border"/>
+            <path d="M261 39V63H262V68H261V69H263V62H262V39H261Z" fill="white" fill-opacity="0.24" class="border"/>
+            <path d="M262 29H261V1H150V0H262V29Z" fill="white" fill-opacity="0.24" class="border"/>
+            <path d="M148 0H133.5V1H148V0Z" fill="white" fill-opacity="0.24" class="border"/>
+            <path d="M123.5 0V1H23V0H123.5Z" fill="white" fill-opacity="0.24" class="border"/>
+            <path d="M21 0H6V6H0V29H1V7H7V1H21V0Z" fill="white" fill-opacity="0.24" class="border"/>
+            <path d="M0 39H1V67H28V68H0V39Z" fill="white" fill-opacity="0.24" class="border"/>
+            <path d="M30 68H123.5V67H30V68Z" fill="white" fill-opacity="0.24" class="border"/>
+            <path d="M259 69V68H257V67H208V68H256V69H259Z" fill="white" fill-opacity="0.24" class="border"/>
+        </svg>
     </div>
 
     <div class="page" id="builds_page">
@@ -47,12 +57,12 @@
                         <p>Download</p>
                     </div>
                     <div class="dropdown_content">
-                        <p class="download">Operation Lovecraft 0.34 Desktop</p>
-                        <p class="download">Operation Lovecraft 0.34 Virtual Reality</p>
+                        <a href="" class="download">Operation Lovecraft 0.34 Desktop</a>
+                        <a href="" class="download">Operation Lovecraft 0.34 Virtual Reality</a>
                     </div>
                 </div>
 
-                <div class="dropdown" tabindex="0">
+                <div class="dropdown fill" tabindex="0">
                     <div class="text">
                         <p>?</p>
                     </div>
@@ -103,6 +113,55 @@
                 </div>
             </div>
         </div>
+    </div>
+
+    <div class="page" id="rewards_page">
+        <h1>Limited Rewards</h1>
+
+        <div class="br"></div>
+
+        <div class="list">
+            <div class="item">
+                <p class="name">Reward Title Here</p>
+
+                <div class="br"></div>
+
+                <div class="dropdown fill" tabindex="0">
+                    <div class="text">
+                        <p>Expand</p>
+                    </div>
+
+                    <div class="dropdown_content">
+                        <p class="small">2022-04-30 ~ 2022-05-31</p>
+                        <p>This time-limited monthly preorder bundle will be available till June 30th. The bundle includes following costumes in the harem mode of Operation Lovecraft:</p>
+
+                        <ul>
+                            <li>Dr.Anya: Victory Hare</li>
+                            <li>Erika: Center Back</li>
+                            <li>Galatea: The Cross Bath</li>
+                            <li>Alet: NAPD Patrol Officer</li>
+                        </ul>
+
+                        <br>
+
+                        <a href="https://www.patreon.com/posts/51874615">Bundle Preview</a>
+
+                        <div class="br_line"></div>
+
+                        <p id="time_left">{TIME LEFT}</p>
+                        <a class="big" href="">Claim Bundle</a>
+
+                        <div class="br big"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="page" id="credits_page">
+        <p>We appreciate your support! Please let us know the name you want to be credited as in the game.</p>
+        <input type="text" class="name_in_credits" spellcheck="false">
+        <p class="submit_credits">Submit</p>
     </div>
 
     <div class="navigator patreon">

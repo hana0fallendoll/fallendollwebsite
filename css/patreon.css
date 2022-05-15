@@ -12,6 +12,65 @@ html, body {
     background-color: #f0f8ff44;
 }
 
+#credits_page p {
+    margin: 0px 40px 0px 40px;
+}
+
+.name_in_credits {
+    width: 70vw;
+    border: 1px solid #3a3944;
+    background-color: #15141A;
+    outline: none;
+    font-family: "Montserrat Regular";
+    font-size: 18px;
+    color: white;
+    padding: 10px 20px 10px 20px;
+    margin: 30px 0px 30px 0px;
+    user-select: none;
+}
+
+.submit_credits {
+    background-color: #15141A;
+    border: 1px solid #3A3944;
+    padding: 10px 30px 10px 30px;
+    transition: all 150ms ease-in;
+}
+
+.submit_credits:hover {
+    background-color: #3a3944;
+}
+
+.submit_credits:hover:active {
+    transition: all 50ms ease-in;
+    transform: scale(90%);
+}
+
+#claim_button path.background {
+    transition: 0.25s ease-in-out;
+    fill-opacity: 0.98;
+}
+
+#claim_button:hover path.background {
+    fill-opacity: 1;
+}
+
+#claim_button path.border {
+    transition: 0.25s cubic-bezier(0.9, 0, 0.1, 1);
+    fill-opacity: 0.4;
+    clip-path: polygon(13% 0, 100% 0%, 89% 100%, 0% 100%);
+}
+
+#claim_button:hover path.border {
+    fill-opacity: 0.6;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+#claim_button:active {
+    transition: 70ms ease-in-out;
+    transform: scale(95%);
+    opacity: 0.8;
+}
+
 .page {
     width: 100%;
     height: auto;
@@ -39,6 +98,7 @@ h1 {
     font-size: 64px;
     font-family: "Montserrat Bold";
     margin: 0px;
+    text-align: center;
 }
 
 p {
@@ -159,6 +219,10 @@ p {
     max-height: 38px;
 }
 
+.item .reward {
+    flex-direction: column;
+}
+
 .item p {
     font-size: 18px;
     font-family: "Montserrat Regular";;
@@ -220,8 +284,31 @@ p {
     padding-right: 30px;
 }
 
+.dropdown.fill .dropdown_content{
+    width: 90vw;
+    padding-right: 10px;
+}
+
 .dropdown.download .dropdown_content {
     padding-right: 0px;
+}
+
+.dropdown_content a {
+    color: rgb(36, 175, 255);
+    font-size: 16px;
+    font-family: "Montserrat Medium";
+
+    padding: 8px;
+    margin: 0px 15px 0px 15px;
+}
+
+.dropdown_content a.big {
+    font-size: 22px;
+    font-family: "Montserrat Bold";
+}
+
+.dropdown_content .seperator {
+    flex: 1;
 }
 
 .dropdown_content p {
@@ -253,9 +340,31 @@ p {
     font-size: 14px;
 }
 
-p.download {
+.dropdown_content .br_line {
+    border-bottom: 1px solid grey;
+    height: 20px;
+    margin-bottom: 16px;
+}
+
+.dropdown_content .br_big {
+    height: 36px;
+}
+
+.row_container {
+    display: flex;
+    flex-direction: row;
+    padding: 6px 0px 6px 0px;
+    width: 100%;
+    height: auto;
+}
+
+a.download {
     margin: 0px;
     padding: 10px 20px 10px 20px;
+    font-size: 16px;
+    font-family: "Montserrat Regular";
+    text-align: left;
+    display: block;
 }
 
 .download:hover {
